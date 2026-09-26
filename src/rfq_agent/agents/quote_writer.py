@@ -97,7 +97,9 @@ _A = {
         "validity": "This quotation is valid for {days} days from the issue date.",
         "gen_tol": "{pn}: general tolerances per {tol} as stated on the drawing.",
         "gen_tol_missing": "{pn}: no general tolerance on the drawing; quoted on ISO 2768-m.",
-        "material": "{pn}: material {mat} as per drawing, including standard mill certificate (EN 10204 2.2).",
+        "material": "{pn}: material {mat} as per drawing, including {cert}.",
+        "cert_22": "standard mill certificate (EN 10204 2.2)",
+        "cert_31": "inspection certificate 3.1 per EN 10204 as requested",
         "ht": "{pn}: heat treatment '{ht}' by an approved subcontractor is included.",
         "surface": "{pn}: surface treatment '{st}' by an approved subcontractor is included.",
         "indexed": "{pn}: the material portion is indexed; it may be adjusted if the market price changes by more than 10 % before order.",
@@ -113,7 +115,9 @@ _A = {
         "validity": "Dieses Angebot ist {days} Tage ab Ausstellungsdatum gültig.",
         "gen_tol": "{pn}: Allgemeintoleranzen nach {tol} gemäß Zeichnung.",
         "gen_tol_missing": "{pn}: keine Allgemeintoleranz auf der Zeichnung; Angebot auf Basis ISO 2768-m.",
-        "material": "{pn}: Werkstoff {mat} gemäß Zeichnung, inkl. Werkszeugnis (EN 10204 2.2).",
+        "material": "{pn}: Werkstoff {mat} gemäß Zeichnung, inkl. {cert}.",
+        "cert_22": "Werkszeugnis (EN 10204 2.2)",
+        "cert_31": "Abnahmeprüfzeugnis 3.1 nach EN 10204 wie angefragt",
         "ht": "{pn}: Wärmebehandlung „{ht}“ durch qualifizierten Unterlieferanten ist enthalten.",
         "surface": "{pn}: Oberflächenbehandlung „{st}“ durch qualifizierten Unterlieferanten ist enthalten.",
         "indexed": "{pn}: Der Materialanteil ist indexiert und kann bei Marktpreisänderungen über 10 % vor Bestellung angepasst werden.",
@@ -137,6 +141,11 @@ def unpriced_items(line: LineQuoteDraft) -> list[str]:
     ]
 
 
+def _wants_31(request: RFQRequest) -> bool:
+    """Customer asked for an EN 10204 3.1 inspection certificate (instead of the standard 2.2)."""
+    return any(re.search(r"\b3\.1\b", r) and "10204" in r for r in request.special_requirements)
+
+
 def build_assumptions(
     request: RFQRequest, lines: list[LineQuoteDraft], materials: Any = None, options: dict[int, set] = None
 ) -> list[str]:
@@ -153,7 +162,8 @@ def build_assumptions(
             tol = spec.title_block.general_tolerance
             out.append(t["gen_tol"].format(pn=pn, tol=tol) if tol else t["gen_tol_missing"].format(pn=pn))
             if spec.title_block.material:
-                out.append(t["material"].format(pn=pn, mat=spec.title_block.material))
+                cert = t["cert_31"] if _wants_31(request) else t["cert_22"]
+                out.append(t["material"].format(pn=pn, mat=spec.title_block.material, cert=cert))
             if spec.heat_treatment:
                 out.append(t["ht"].format(pn=pn, ht=spec.heat_treatment))
             if spec.surface_treatment:
@@ -403,6 +413,23 @@ _ASK = {
 _ASK_DEFAULT = ("Please confirm or advise.", "Bitte um kurze Bestätigung bzw. Rückmeldung.")
 
 
+def _customer_subject(message: str) -> tuple[str, bool]:
+    """Customer-facing reference of a rule finding, without internal feature ids, thresholds or notes.
+
+    'F4: wall 1.5 mm < 2.0 mm minimum (unknown material, steel limit used).' -> ('wall 1.5 mm', True)
+    "Parts list item 6 'EC-5103' is neither ..."                               -> ('EC-5103', True)
+    'The material field in the title block is empty.'                         -> (that sentence, False)
+    """
+    quoted = re.search(r"'([^']+)'", message)
+    if not re.match(r"^F\d+:\s*", message) and quoted:
+        return quoted.group(1), True
+    is_ref = bool(re.match(r"^F\d+:\s*", message))
+    s = re.sub(r"^F\d+:\s*", "", message)
+    s = re.sub(r"\s*\([^)]*\)", "", s)
+    s = re.split(r"\s[<>≤≥]\s|,\s", s)[0].strip().rstrip(".")
+    return s, is_ref
+
+
 def customer_questions(
     request: RFQRequest, issues: list[ValidationIssue], comment: str | None = None
 ) -> list[str]:
@@ -416,10 +443,12 @@ def customer_questions(
         item = items.get(i.line_no)
         pn = (item.customer_part_number or item.drawing_ref) if item else f"#{i.line_no}"
         en, de = _ASK.get(i.code, _ASK_DEFAULT)
-        if lang == "de":
-            out.append(f"{pn}: {de} (Hinweis: {i.message})")
+        subject, is_ref = _customer_subject(i.message)
+        ask = de if lang == "de" else en
+        if is_ref:
+            out.append(f"{pn} ({subject}): {ask}")
         else:
-            out.append(f"{pn}: {i.message} {en}")
+            out.append(f"{pn}: {ask}" if lang == "de" else f"{pn}: {subject}. {ask}")
     if comment and comment.strip():
         out.append(comment.strip())
     return out

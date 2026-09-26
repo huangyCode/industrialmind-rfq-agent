@@ -6,6 +6,8 @@ import streamlit as st
 
 from rfq_agent.ui import common
 
+MIN_SCORE = 0.08  # below this, retrieval results are shown as "not a match"
+
 
 def render() -> None:
     st.title("Knowledge base")
@@ -25,6 +27,13 @@ def render() -> None:
         return
     if not hits:
         st.info("No matching section.")
+        return
+    if hits[0]["score"] < MIN_SCORE:
+        st.warning(
+            f"No section matches this query well (best score {hits[0]['score']:.3f} < {MIN_SCORE}). "
+            "The knowledge base is written in English: try English terms, e.g. 'deep hole drilling'. "
+            "Closest sections below, for reference only."
+        )
     for h in hits:
         with st.container(border=True):
             a, b = st.columns([5, 1])

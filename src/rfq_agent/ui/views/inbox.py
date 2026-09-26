@@ -127,7 +127,12 @@ def render() -> None:
         with cols[4]:
             if r and r["tiers"]:
                 common.tier_badge(common.worst_tier(r["tiers"]))
-        if cols[5].button("Run", key=f"run_{s['rfq_id']}", width="stretch"):
+        label, hint = (
+            ("Re-run", "Starts a fresh run; the previous run of this RFQ is replaced.")
+            if r
+            else ("Run", None)
+        )
+        if cols[5].button(label, key=f"run_{s['rfq_id']}", width="stretch", help=hint):
             _run(s, extractor, auto)
             st.rerun()
 

@@ -108,9 +108,9 @@ def style_tier_column(df, column: str = "tier"):
 
     def colour(v):
         bg = TIER_BG.get(str(v).split(",")[0].split(":")[-1].strip()) if v else None
-        return f"background-color: {bg}" if bg else ""
+        return f"background-color: {bg}; color: #1d2733" if bg else ""
 
-    return df.style.map(colour, subset=[column])
+    return df.style.map(colour, subset=[column]).format(precision=2)
 
 
 def inject_css() -> None:

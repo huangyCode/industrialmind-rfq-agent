@@ -178,7 +178,7 @@ def _extraction(spec: DrawingSpec | None, uncovered: list[str]) -> None:
                 {
                     "id": f.id,
                     "type": f.type.value,
-                    "description": f.description,
+                    "model wording": f.description,
                     "nominal mm": f.nominal_mm,
                     "length mm": f.length_mm,
                     "qty": f.quantity,
@@ -291,9 +291,9 @@ def _bom(ln) -> None:
     unpriced = (df["source"] == "new") | (df["unit cost EUR"].isna() & (df["source"] != "service"))
 
     def row_style(row):
-        return ["background-color: #f9d5d3" if unpriced[row.name] else "" for _ in row]
+        return ["background-color: #f9d5d3; color: #1d2733" if unpriced[row.name] else "" for _ in row]
 
-    st.dataframe(df.style.apply(row_style, axis=1), hide_index=True, width="stretch")
+    st.dataframe(df.style.apply(row_style, axis=1).format(precision=3), hide_index=True, width="stretch")
     if unpriced.any():
         st.error(
             f"{int(unpriced.sum())} item(s) could not be matched or priced (highlighted). "
@@ -331,7 +331,7 @@ def _routing(ln, editor_key: str, editable: bool) -> list[ReviewEdit]:
     )
     edits = routing_edits(ln.line_no, ln.routing, edited) if editable else []
     if edits:
-        st.info(f"{len(edits)} unapplied change(s). Use 'Apply edits & recalculate' below.")
+        st.info(f"{len(edits)} unapplied routing change(s). Use 'Apply edits & recalculate' below.")
     return edits
 
 

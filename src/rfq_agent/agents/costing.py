@@ -197,21 +197,21 @@ def _one(
     lines += [
         CostLine(
             category="overhead",
-            description=f"Overhead {plant} ({oh_pct:.0%} of direct cost)",
+            description=f"Overhead {plant} ({oh_pct * 100:g}% of direct cost)",
             amount_eur_per_pc=overhead,
             formula=f"{_m(subtotal)} € × {_n(oh_pct)}",
             source=f"plants:{plant}",
         ),
         CostLine(
             category="logistics",
-            description=f"Logistics & duties {plant} → DE customer ({log_pct:.0%})",
+            description=f"Logistics & duties {plant} → DE customer ({log_pct * 100:g}%)",
             amount_eur_per_pc=logistics,
             formula=f"{_m(subtotal)} € × {_n(log_pct)}",
             source=f"plants:{plant}",
         ),
         CostLine(
             category="margin",
-            description=f"Target margin {margin_pct:.0%} on price",
+            description=f"Target margin {margin_pct * 100:g}% on price",
             amount_eur_per_pc=unit_price - unit_cost,
             formula=f"{_m(unit_cost)} € / (1 − {_n(margin_pct)}) − {_m(unit_cost)} €",
             source="policy:margin_pct",
