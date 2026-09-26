@@ -1,0 +1,28 @@
+From: Jonas Brückner <j.brueckner@hallvig-foerdertechnik.example>
+To: Vertrieb PrecisionMotion <sales@precisionmotion.example>
+Subject: Anfrage Abtriebswelle SH-4711 - 200 / 500 Stück
+Date: Tue, 15 Sep 2026 09:42:17 +0200
+Attachments: SH-4711.pdf
+
+Sehr geehrte Damen und Herren,
+
+für die Serienfertigung unseres neuen Kettenfördergetriebes bitten wir um Ihr Angebot für
+folgende Position:
+
+Pos. 1: Abtriebswelle, Zeichnungs-Nr. SH-4711, Index B (siehe Anhang SH-4711.pdf)
+Mengen: 200 Stück sowie 500 Stück (bitte Staffelpreise angeben)
+Gewünschter Liefertermin: 27.11.2026
+
+Weitere Anforderungen:
+- Werkstoff und Wärmebehandlung gemäß Zeichnung
+- Abnahmeprüfzeugnis 3.1 nach EN 10204 für das Material
+- Erstmusterprüfbericht (EMPB) mit der ersten Lieferung
+
+Lieferbedingung: DAP Kassel (Incoterms 2020), Preise bitte in EUR.
+Wir bitten um Zusendung Ihres Angebots bis zum 02.10.2026.
+
+Mit freundlichen Grüßen
+
+Jonas Brückner
+Strategischer Einkauf
+Hallvig Fördertechnik GmbH

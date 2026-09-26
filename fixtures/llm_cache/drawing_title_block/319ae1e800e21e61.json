@@ -1,0 +1,80 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_title_block",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v2+base.v3",
+    "user_text_chars": 50,
+    "images": [
+      "CP-7390_p1_title_block.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 17733,
+    "key": "319ae1e800e21e619e7e2647709c07d33ac40c7c6fe17f2152fc0a34035ee99b"
+  },
+  "raw_response": "{\n  \"title_block\": {\n    \"part_number\": \"CP-7390\",\n    \"revision\": \"1\",\n    \"title\": \"Adapter Plate\",\n    \"material\": \"EN-GJS-500-7\",\n    \"material_code\": null,\n    \"general_tolerance\": \"ISO 2768-mH\",\n    \"default_ra_um\": 3.2,\n    \"scale\": \"1:1\",\n    \"units\": \"mm\",\n    \"drawn_by\": \"B. Kowalczyk\",\n    \"date\": \"21.08.2026\",\n    \"evidence\": {\n      \"part_number\": {\n        \"text\": \"CP-7390\",\n        \"location\": \"Drawing No.\"\n      },\n      \"revision\": {\n        \"text\": \"1\",\n        \"location\": \"Issue\"\n      },\n      \"title\": {\n        \"text\": \"Adapter Plate\",\n        \"location\": \"Description\"\n      },\n      \"material\": {\n        \"text\": \"EN-GJS-500-7\",\n        \"location\": \"Material\"\n      },\n      \"general_tolerance\": {\n        \"text\": \"ISO 2768-mH\",\n        \"location\": \"Tolerances unless stated\"\n      },\n      \"default_ra_um\": {\n        \"text\": \"Ra 3.2\",\n        \"location\": \"Finish\"\n      },\n      \"scale\": {\n        \"text\": \"1:1\",\n        \"location\": \"Scale\"\n      },\n      \"units\": {\n        \"text\": \"mm\",\n        \"location\": \"Unit\"\n      },\n      \"drawn_by\": {\n        \"text\": \"B. Kowalczyk\",\n        \"location\": \"Drawn\"\n      },\n      \"date\": {\n        \"text\": \"21.08.2026\",\n        \"location\": \"Date\"\n      }\n    }\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "title_block": {
+      "part_number": "CP-7390",
+      "revision": "1",
+      "title": "Adapter Plate",
+      "material": "EN-GJS-500-7",
+      "material_code": null,
+      "general_tolerance": "ISO 2768-mH",
+      "default_ra_um": 3.2,
+      "scale": "1:1",
+      "units": "mm",
+      "drawn_by": "B. Kowalczyk",
+      "date": "21.08.2026",
+      "evidence": {
+        "part_number": {
+          "text": "CP-7390",
+          "location": "Drawing No."
+        },
+        "revision": {
+          "text": "1",
+          "location": "Issue"
+        },
+        "title": {
+          "text": "Adapter Plate",
+          "location": "Description"
+        },
+        "material": {
+          "text": "EN-GJS-500-7",
+          "location": "Material"
+        },
+        "general_tolerance": {
+          "text": "ISO 2768-mH",
+          "location": "Tolerances unless stated"
+        },
+        "default_ra_um": {
+          "text": "Ra 3.2",
+          "location": "Finish"
+        },
+        "scale": {
+          "text": "1:1",
+          "location": "Scale"
+        },
+        "units": {
+          "text": "mm",
+          "location": "Unit"
+        },
+        "drawn_by": {
+          "text": "B. Kowalczyk",
+          "location": "Drawn"
+        },
+        "date": {
+          "text": "21.08.2026",
+          "location": "Date"
+        }
+      }
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 948,
+    "output_tokens": 480
+  },
+  "recorded_at": "2026-09-26T17:23:59"
+}

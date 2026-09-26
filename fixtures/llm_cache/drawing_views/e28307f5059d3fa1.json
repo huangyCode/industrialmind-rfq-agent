@@ -1,0 +1,164 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_views",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v4+base.v3",
+    "user_text_chars": 104,
+    "images": [
+      "CP-7390_p1_overview.png",
+      "CP-7390_p1_view_1.png",
+      "CP-7390_p1_view_2.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 42236,
+    "key": "e28307f5059d3fa1f14cd4336817d8b587c49ac9852bb8ed16cc17ac178cb137"
+  },
+  "raw_response": "{\n  \"envelope\": {\n    \"shape_class\": \"prismatic\",\n    \"max_diameter_mm\": null,\n    \"length_mm\": 150,\n    \"width_mm\": 100,\n    \"height_mm\": 20\n  },\n  \"features\": [\n    {\n      \"id\": \"F1\",\n      \"type\": \"hole\",\n      \"description\": \"4x Ø13.5 THRU\",\n      \"nominal_mm\": 13.5,\n      \"length_mm\": null,\n      \"quantity\": 4,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"4x Ø13.5 THRU\",\n        \"location\": \"top view\"\n      }\n    },\n    {\n      \"id\": \"F2\",\n      \"type\": \"bore\",\n      \"description\": \"C'BORE Ø20 depth 13\",\n      \"nominal_mm\": 20,\n      \"length_mm\": 13,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"C'BORE Ø20 depth 13\",\n        \"location\": \"top view\"\n      }\n    },\n    {\n      \"id\": \"F3\",\n      \"type\": \"thread\",\n      \"description\": \"6x M6-6H depth 9 on PCD 72\",\n      \"nominal_mm\": 6,\n      \"length_mm\": 9,\n      \"quantity\": 6,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"6H\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": \"M6-6H\",\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"6x M6-6H depth 9 on PCD 72\",\n        \"location\": \"top view\"\n      }\n    },\n    {\n      \"id\": \"F4\",\n      \"type\": \"slot\",\n      \"description\": \"SLOT 40x12 H9 THRU\",\n      \"nominal_mm\": 12,\n      \"length_mm\": 40,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H9\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"SLOT 40x12 H9 THRU\",\n        \"location\": \"top view\"\n      }\n    },\n    {\n      \"id\": \"F5\",\n      \"type\": \"bore\",\n      \"description\": \"Ø56 H8\",\n      \"nominal_mm\": 56,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H8\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø56 H8\",\n        \"location\": \"top view\"\n      }\n    },\n    {\n      \"id\": \"F6\",\n      \"type\": \"hole\",\n      \"description\": \"2x Ø10 H7 THRU\",\n      \"nominal_mm\": 10,\n      \"length_mm\": null,\n      \"quantity\": 2,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H7\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"2x Ø10 H7 THRU\",\n        \"location\": \"top view\"\n      }\n    }\n  ],\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "envelope": {
+      "shape_class": "prismatic",
+      "max_diameter_mm": null,
+      "length_mm": 150.0,
+      "width_mm": 100.0,
+      "height_mm": 20.0
+    },
+    "features": [
+      {
+        "id": "F1",
+        "type": "hole",
+        "description": "4x Ø13.5 THRU",
+        "nominal_mm": 13.5,
+        "length_mm": null,
+        "quantity": 4,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "4x Ø13.5 THRU",
+          "location": "top view"
+        }
+      },
+      {
+        "id": "F2",
+        "type": "bore",
+        "description": "C'BORE Ø20 depth 13",
+        "nominal_mm": 20.0,
+        "length_mm": 13.0,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "C'BORE Ø20 depth 13",
+          "location": "top view"
+        }
+      },
+      {
+        "id": "F3",
+        "type": "thread",
+        "description": "6x M6-6H depth 9 on PCD 72",
+        "nominal_mm": 6.0,
+        "length_mm": 9.0,
+        "quantity": 6,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "6H",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": "M6-6H",
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "6x M6-6H depth 9 on PCD 72",
+          "location": "top view"
+        }
+      },
+      {
+        "id": "F4",
+        "type": "slot",
+        "description": "SLOT 40x12 H9 THRU",
+        "nominal_mm": 12.0,
+        "length_mm": 40.0,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H9",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "SLOT 40x12 H9 THRU",
+          "location": "top view"
+        }
+      },
+      {
+        "id": "F5",
+        "type": "bore",
+        "description": "Ø56 H8",
+        "nominal_mm": 56.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H8",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø56 H8",
+          "location": "top view"
+        }
+      },
+      {
+        "id": "F6",
+        "type": "hole",
+        "description": "2x Ø10 H7 THRU",
+        "nominal_mm": 10.0,
+        "length_mm": null,
+        "quantity": 2,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H7",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "2x Ø10 H7 THRU",
+          "location": "top view"
+        }
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 2615,
+    "output_tokens": 1180
+  },
+  "recorded_at": "2026-09-26T17:24:47"
+}

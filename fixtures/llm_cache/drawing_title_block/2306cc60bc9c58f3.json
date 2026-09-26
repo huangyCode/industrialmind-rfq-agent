@@ -1,0 +1,88 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0101",
+    "node": "drawing_title_block",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v2+base.v3",
+    "user_text_chars": 50,
+    "images": [
+      "SH-4711_p1_title_block.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 14194,
+    "key": "2306cc60bc9c58f3aecb05a0236c4e73bd33e4b04f998a294ba610ce8a80d5e1"
+  },
+  "raw_response": "{\n  \"title_block\": {\n    \"part_number\": \"SH-4711\",\n    \"revision\": \"B\",\n    \"title\": \"Output Shaft\",\n    \"material\": \"42CrMo4+QT\",\n    \"material_code\": null,\n    \"general_tolerance\": \"ISO 2768-mK\",\n    \"default_ra_um\": 3.2,\n    \"scale\": \"1:1\",\n    \"units\": \"mm\",\n    \"drawn_by\": \"K. Lindqvist\",\n    \"date\": \"2026-08-12\",\n    \"evidence\": {\n      \"part_number\": {\n        \"text\": \"SH-4711\",\n        \"location\": \"Part number\"\n      },\n      \"revision\": {\n        \"text\": \"B\",\n        \"location\": \"Rev.\"\n      },\n      \"title\": {\n        \"text\": \"Output Shaft\",\n        \"location\": \"Title\"\n      },\n      \"material\": {\n        \"text\": \"42CrMo4+QT\",\n        \"location\": \"Material\"\n      },\n      \"general_tolerance\": {\n        \"text\": \"ISO 2768-mK\",\n        \"location\": \"General tolerance\"\n      },\n      \"surface\": {\n        \"text\": \"Ra 3.2\",\n        \"location\": \"Surface\"\n      },\n      \"scale\": {\n        \"text\": \"1:1\",\n        \"location\": \"Scale\"\n      },\n      \"units\": {\n        \"text\": \"mm\",\n        \"location\": \"Units\"\n      },\n      \"sheet\": {\n        \"text\": \"1 / 1\",\n        \"location\": \"Sheet\"\n      },\n      \"drawn_by\": {\n        \"text\": \"K. Lindqvist\",\n        \"location\": \"Drawn\"\n      },\n      \"date\": {\n        \"text\": \"2026-08-12\",\n        \"location\": \"Date\"\n      },\n      \"format\": {\n        \"text\": \"A3\",\n        \"location\": \"Format\"\n      }\n    }\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "title_block": {
+      "part_number": "SH-4711",
+      "revision": "B",
+      "title": "Output Shaft",
+      "material": "42CrMo4+QT",
+      "material_code": null,
+      "general_tolerance": "ISO 2768-mK",
+      "default_ra_um": 3.2,
+      "scale": "1:1",
+      "units": "mm",
+      "drawn_by": "K. Lindqvist",
+      "date": "2026-08-12",
+      "evidence": {
+        "part_number": {
+          "text": "SH-4711",
+          "location": "Part number"
+        },
+        "revision": {
+          "text": "B",
+          "location": "Rev."
+        },
+        "title": {
+          "text": "Output Shaft",
+          "location": "Title"
+        },
+        "material": {
+          "text": "42CrMo4+QT",
+          "location": "Material"
+        },
+        "general_tolerance": {
+          "text": "ISO 2768-mK",
+          "location": "General tolerance"
+        },
+        "surface": {
+          "text": "Ra 3.2",
+          "location": "Surface"
+        },
+        "scale": {
+          "text": "1:1",
+          "location": "Scale"
+        },
+        "units": {
+          "text": "mm",
+          "location": "Units"
+        },
+        "sheet": {
+          "text": "1 / 1",
+          "location": "Sheet"
+        },
+        "drawn_by": {
+          "text": "K. Lindqvist",
+          "location": "Drawn"
+        },
+        "date": {
+          "text": "2026-08-12",
+          "location": "Date"
+        },
+        "format": {
+          "text": "A3",
+          "location": "Format"
+        }
+      }
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 948,
+    "output_tokens": 519
+  },
+  "recorded_at": "2026-09-26T17:18:28"
+}

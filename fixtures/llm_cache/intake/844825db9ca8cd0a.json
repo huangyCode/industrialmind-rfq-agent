@@ -1,0 +1,47 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0103",
+    "node": "intake",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3",
+    "user_text_chars": 819,
+    "images": [],
+    "attempts": 1,
+    "latency_ms": 9833,
+    "key": "844825db9ca8cd0ad4f24e8ef315fadd29d81b73d756a36cded072c8a4ccb79e"
+  },
+  "raw_response": "{\n  \"rfq_id\": \"RFQ-2026-0103\",\n  \"customer_name\": \"Tervalo Automation B.V.\",\n  \"contact_name\": \"Sanne Verbeek\",\n  \"contact_email\": \"s.verbeek@tervalo-automation.example\",\n  \"language\": \"en\",\n  \"received_at\": \"2026-09-17\",\n  \"incoterm\": \"DAP\",\n  \"currency\": \"EUR\",\n  \"special_requirements\": [\n    \"First article inspection report with the first delivery\",\n    \"Parts delivered deburred and cleaned\"\n  ],\n  \"items\": [\n    {\n      \"line_no\": 1,\n      \"customer_part_number\": \"BR-0930\",\n      \"description\": \"Mounting Bracket\",\n      \"drawing_ref\": \"BR-0930.pdf\",\n      \"quantities\": [\n        300\n      ],\n      \"requested_delivery\": \"2026-11-20\",\n      \"notes\": null\n    }\n  ]\n}",
+  "parsed": {
+    "rfq_id": "RFQ-2026-0103",
+    "customer_name": "Tervalo Automation B.V.",
+    "contact_name": "Sanne Verbeek",
+    "contact_email": "s.verbeek@tervalo-automation.example",
+    "language": "en",
+    "received_at": "2026-09-17",
+    "incoterm": "DAP",
+    "currency": "EUR",
+    "special_requirements": [
+      "First article inspection report with the first delivery",
+      "Parts delivered deburred and cleaned"
+    ],
+    "items": [
+      {
+        "line_no": 1,
+        "customer_part_number": "BR-0930",
+        "description": "Mounting Bracket",
+        "drawing_ref": "BR-0930.pdf",
+        "quantities": [
+          300
+        ],
+        "requested_delivery": "2026-11-20",
+        "notes": null
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 1141,
+    "output_tokens": 262
+  },
+  "recorded_at": "2026-09-26T17:26:40"
+}

@@ -1,0 +1,91 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0104",
+    "node": "drawing_notes",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3+base.v3",
+    "user_text_chars": 69,
+    "images": [
+      "ASM-5100_p1_right_column.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 18720,
+    "key": "e9f22529927cbc766935a4c54d6b949c602ddf82b42c7a9250b6902696fb22c0"
+  },
+  "raw_response": "{\n  \"notes\": [\n    \"Tightening torque pos. 5: 6 Nm, secure with medium-strength threadlocker.\",\n    \"Bearings pos. 3 pre-greased; fill seal lip pos. 4 with grease before assembly.\",\n    \"Shaft must rotate freely by hand after assembly; 100 % functional test.\"\n  ],\n  \"heat_treatment\": null,\n  \"surface_treatment\": null,\n  \"parts_list\": [\n    {\n      \"item_no\": 1,\n      \"part_number\": \"HS-5101\",\n      \"description\": \"Gehäuse\",\n      \"quantity\": 1,\n      \"material\": \"EN-GJS-500-7\",\n      \"standard\": null\n    },\n    {\n      \"item_no\": 2,\n      \"part_number\": \"SH-5102\",\n      \"description\": \"Welle\",\n      \"quantity\": 1,\n      \"material\": \"C45\",\n      \"standard\": null\n    },\n    {\n      \"item_no\": 3,\n      \"part_number\": \"6204-2RS\",\n      \"description\": \"Rillenkugellager 20x47x14\",\n      \"quantity\": 2,\n      \"material\": null,\n      \"standard\": \"DIN 625\"\n    },\n    {\n      \"item_no\": 4,\n      \"part_number\": null,\n      \"description\": \"Wellendichtring 20x35x7 NBR\",\n      \"quantity\": 1,\n      \"material\": null,\n      \"standard\": \"DIN 3760\"\n    },\n    {\n      \"item_no\": 5,\n      \"part_number\": null,\n      \"description\": \"Zylinderschraube M5x16-8.8\",\n      \"quantity\": 4,\n      \"material\": null,\n      \"standard\": \"ISO 4762\"\n    },\n    {\n      \"item_no\": 6,\n      \"part_number\": \"EC-5103\",\n      \"description\": \"Enddeckel\",\n      \"quantity\": 1,\n      \"material\": \"EN AW-6082 T6\",\n      \"standard\": null\n    },\n    {\n      \"item_no\": 7,\n      \"part_number\": null,\n      \"description\": \"Sicherungsring 20x1.2\",\n      \"quantity\": 1,\n      \"material\": null,\n      \"standard\": \"DIN 471\"\n    }\n  ],\n  \"gear_data\": null,\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "notes": [
+      "Tightening torque pos. 5: 6 Nm, secure with medium-strength threadlocker.",
+      "Bearings pos. 3 pre-greased; fill seal lip pos. 4 with grease before assembly.",
+      "Shaft must rotate freely by hand after assembly; 100 % functional test."
+    ],
+    "heat_treatment": null,
+    "surface_treatment": null,
+    "parts_list": [
+      {
+        "item_no": 1,
+        "part_number": "HS-5101",
+        "description": "Gehäuse",
+        "quantity": 1,
+        "material": "EN-GJS-500-7",
+        "standard": null
+      },
+      {
+        "item_no": 2,
+        "part_number": "SH-5102",
+        "description": "Welle",
+        "quantity": 1,
+        "material": "C45",
+        "standard": null
+      },
+      {
+        "item_no": 3,
+        "part_number": "6204-2RS",
+        "description": "Rillenkugellager 20x47x14",
+        "quantity": 2,
+        "material": null,
+        "standard": "DIN 625"
+      },
+      {
+        "item_no": 4,
+        "part_number": null,
+        "description": "Wellendichtring 20x35x7 NBR",
+        "quantity": 1,
+        "material": null,
+        "standard": "DIN 3760"
+      },
+      {
+        "item_no": 5,
+        "part_number": null,
+        "description": "Zylinderschraube M5x16-8.8",
+        "quantity": 4,
+        "material": null,
+        "standard": "ISO 4762"
+      },
+      {
+        "item_no": 6,
+        "part_number": "EC-5103",
+        "description": "Enddeckel",
+        "quantity": 1,
+        "material": "EN AW-6082 T6",
+        "standard": null
+      },
+      {
+        "item_no": 7,
+        "part_number": null,
+        "description": "Sicherungsring 20x1.2",
+        "quantity": 1,
+        "material": null,
+        "standard": "DIN 471"
+      }
+    ],
+    "gear_data": null,
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 1095,
+    "output_tokens": 635
+  },
+  "recorded_at": "2026-09-26T17:21:25"
+}

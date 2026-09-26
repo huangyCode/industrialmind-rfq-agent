@@ -1,0 +1,167 @@
+{
+  "drawing_file": "BR-0930.pdf",
+  "title_block": {
+    "part_number": "BR-0930",
+    "revision": "A",
+    "title": "Mounting Bracket",
+    "material": null,
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mK",
+    "default_ra_um": 3.2,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "S. Verhoek",
+    "date": "2026-09-02",
+    "evidence": {
+      "part_number": {
+        "text": "BR-0930",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "A",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Mounting Bracket",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mK",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "S. Verhoek",
+        "location": "title block"
+      },
+      "date": {
+        "text": "2026-09-02",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "prismatic",
+    "max_diameter_mm": null,
+    "length_mm": 160.0,
+    "width_mm": 80.0,
+    "height_mm": 60.0
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "pocket",
+      "description": "Pocket 120 x 62, depth 40, corner radius R6",
+      "nominal_mm": 62.0,
+      "length_mm": 120.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "POCKET 120×62 depth 40, R6",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "wall",
+      "description": "Thin side wall 1.5 between pocket and front face, height 40",
+      "nominal_mm": 1.5,
+      "length_mm": 120.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "WALL 1.5",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "hole",
+      "description": "Deep blind hole Ø6, depth 80, drilled from right end face",
+      "nominal_mm": 6.0,
+      "length_mm": 80.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø6 depth 80",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "thread",
+      "description": "4x tapped hole M8 in bottom face, thread depth 16",
+      "nominal_mm": 8.0,
+      "length_mm": 16.0,
+      "quantity": 4,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": "M8x1.25",
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "4× M8 depth 16",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "hole",
+      "description": "2x dowel hole Ø8 H7, depth 12, in top face",
+      "nominal_mm": 8.0,
+      "length_mm": 12.0,
+      "quantity": 2,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H7",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× Ø8 H7 depth 12",
+        "location": "top view"
+      }
+    }
+  ],
+  "heat_treatment": null,
+  "surface_treatment": null,
+  "notes": [
+    "Pocket corners R6 unless otherwise stated.",
+    "Break all sharp edges 0.3×45°.",
+    "Surfaces free of burrs and scratches."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

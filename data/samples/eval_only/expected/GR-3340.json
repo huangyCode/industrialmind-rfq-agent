@@ -1,0 +1,181 @@
+{
+  "drawing_file": "GR-3340.pdf",
+  "title_block": {
+    "part_number": "GR-3340",
+    "revision": "A",
+    "title": "Spur Gear",
+    "material": "16MnCr5",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mK",
+    "default_ra_um": 3.2,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "P. Wendholt",
+    "date": "2026-06-17",
+    "evidence": {
+      "part_number": {
+        "text": "GR-3340",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "A",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Spur Gear",
+        "location": "title block"
+      },
+      "material": {
+        "text": "16MnCr5",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mK",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "P. Wendholt",
+        "location": "title block"
+      },
+      "date": {
+        "text": "2026-06-17",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "rotational",
+    "max_diameter_mm": 84.0,
+    "length_mm": 20.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "gear_teeth",
+      "description": "Spur gear teeth m 2, z 40, pressure angle 20°, pitch diameter 80, face width 20",
+      "nominal_mm": 80.0,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": 2.0,
+      "gear_teeth": 40,
+      "face_width_mm": 20.0,
+      "evidence": {
+        "text": "m = 2",
+        "location": "gear data"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "outer_diameter",
+      "description": "Tip diameter Ø84 h11",
+      "nominal_mm": 84.0,
+      "length_mm": 20.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "h11",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø84 h11",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "bore",
+      "description": "Bore Ø25 H7, Ra 1.6",
+      "nominal_mm": 25.0,
+      "length_mm": 20.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H7",
+        "it_grade": null
+      },
+      "ra_um": 1.6,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø25 H7",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "keyway",
+      "description": "Hub keyway 8 JS9 through, depth 28.3 from bore bottom",
+      "nominal_mm": 8.0,
+      "length_mm": 20.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "JS9",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "8 JS9",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "chamfer",
+      "description": "Chamfer 1x45° on tip edges",
+      "nominal_mm": 1.0,
+      "length_mm": null,
+      "quantity": 2,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× 1×45°",
+        "location": "section A-A"
+      }
+    }
+  ],
+  "heat_treatment": "case hardened 58-62 HRC",
+  "surface_treatment": null,
+  "notes": [
+    "Heat treatment: case hardened 58-62 HRC, CHD 0.6-0.9 mm.",
+    "Bore and faces ground after hardening.",
+    "Break all sharp edges 0.2-0.5."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

@@ -1,0 +1,176 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_views",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v4+base.v3",
+    "user_text_chars": 105,
+    "images": [
+      "BS-60218_p1_overview.png",
+      "BS-60218_p1_view_1.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 45681,
+    "key": "15ff9be20904fc010c72ab27d7ffc1c8055f03b27def5e56c3cb03e0120fed80"
+  },
+  "raw_response": "{\n  \"envelope\": {\n    \"shape_class\": \"rotational\",\n    \"max_diameter_mm\": 56,\n    \"length_mm\": 56.0000000000000010,\n    \"width_mm\": null,\n    \"height_mm\": null\n  },\n  \"features\": [\n    {\n      \"id\": \"F1\",\n      \"type\": \"bore\",\n      \"description\": \"bore\",\n      \"nominal_mm\": 30,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H7\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø30 H7\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F2\",\n      \"type\": \"groove\",\n      \"description\": \"groove\",\n      \"nominal_mm\": 31.4,\n      \"length_mm\": 1.2,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"GROOVE Ø31.4x1.2 DIN 472\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F3\",\n      \"type\": \"hole\",\n      \"description\": \"hole\",\n      \"nominal_mm\": 5,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": 1.6,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø5 THRU\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F4\",\n      \"type\": \"outer_diameter\",\n      \"description\": \"outer_diameter\",\n      \"nominal_mm\": 45,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"r6\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø45 r6\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F5\",\n      \"type\": \"outer_diameter\",\n      \"description\": \"outer_diameter\",\n      \"nominal_mm\": 56,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": 0.2,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø56\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F6\",\n      \"type\": \"chamfer\",\n      \"description\": \"chamfer\",\n      \"nominal_mm\": 1.5,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"1.5x30°\",\n        \"location\": \"SECTION A-A\"\n      }\n    },\n    {\n      \"id\": \"F7\",\n      \"type\": \"face\",\n      \"description\": \"face\",\n      \"nominal_mm\": 56,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": 0.05,\n        \"lower\": -0.05,\n        \"fit\": null,\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"56 ±0.05\",\n        \"location\": \"SECTION A-A\"\n      }\n    }\n  ],\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "envelope": {
+      "shape_class": "rotational",
+      "max_diameter_mm": 56.0,
+      "length_mm": 56.0,
+      "width_mm": null,
+      "height_mm": null
+    },
+    "features": [
+      {
+        "id": "F1",
+        "type": "bore",
+        "description": "bore",
+        "nominal_mm": 30.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H7",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø30 H7",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F2",
+        "type": "groove",
+        "description": "groove",
+        "nominal_mm": 31.4,
+        "length_mm": 1.2,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "GROOVE Ø31.4x1.2 DIN 472",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F3",
+        "type": "hole",
+        "description": "hole",
+        "nominal_mm": 5.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": 1.6,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø5 THRU",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F4",
+        "type": "outer_diameter",
+        "description": "outer_diameter",
+        "nominal_mm": 45.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "r6",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø45 r6",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F5",
+        "type": "outer_diameter",
+        "description": "outer_diameter",
+        "nominal_mm": 56.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": 0.2,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø56",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F6",
+        "type": "chamfer",
+        "description": "chamfer",
+        "nominal_mm": 1.5,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "1.5x30°",
+          "location": "SECTION A-A"
+        }
+      },
+      {
+        "id": "F7",
+        "type": "face",
+        "description": "face",
+        "nominal_mm": 56.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": 0.05,
+          "lower": -0.05,
+          "fit": null,
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "56 ±0.05",
+          "location": "SECTION A-A"
+        }
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 2364,
+    "output_tokens": 1263
+  },
+  "recorded_at": "2026-09-26T17:23:39"
+}

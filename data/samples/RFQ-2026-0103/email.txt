@@ -1,0 +1,24 @@
+From: Sanne Verbeek <s.verbeek@tervalo-automation.example>
+To: Vertrieb PrecisionMotion <sales@precisionmotion.example>
+Subject: Request for quotation - Mounting bracket BR-0930
+Date: Thu, 17 Sep 2026 11:18:03 +0200
+Attachments: BR-0930.pdf
+
+Hello,
+
+for a new pick-and-place module we are looking for a supplier for the following part:
+
+Item 1: Mounting Bracket, drawing no. BR-0930 rev. A (see attachment BR-0930.pdf)
+Quantity: 300 pcs
+Requested delivery date: 20 November 2026
+
+Please include in your offer:
+- First article inspection report with the first delivery
+- Parts delivered deburred and cleaned
+
+Delivery DAP Eindhoven. Please quote in EUR.
+
+Best regards,
+Sanne Verbeek
+Purchasing
+Tervalo Automation B.V.

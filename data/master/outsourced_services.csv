@@ -1,0 +1,6 @@
+code,name,price_eur_kg,lot_min_eur,extra_lead_weeks
+HT_QT,Quench & temper,2.0,120,1
+HT_CASE,Case hardening,3.5,150,1
+ANODIZE,Anodizing,12.0,80,1
+ZINC,Zinc plating,1.8,60,1
+BLACK,Black oxide,1.2,50,1

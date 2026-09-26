@@ -1,0 +1,27 @@
+{
+  "rfq_id": "RFQ-2026-0104",
+  "customer_name": "Veltrum Aktorik GmbH",
+  "contact_name": "Markus Engelhardt",
+  "contact_email": "m.engelhardt@veltrum-aktorik.example",
+  "language": "de",
+  "received_at": "2026-09-21",
+  "incoterm": "FCA",
+  "currency": "EUR",
+  "special_requirements": [
+    "Delivered as fully assembled unit",
+    "100 % functional test with test report"
+  ],
+  "items": [
+    {
+      "line_no": 1,
+      "customer_part_number": "ASM-5100",
+      "description": "Aktuator-Unterbaugruppe",
+      "drawing_ref": "ASM-5100.pdf",
+      "quantities": [
+        50
+      ],
+      "requested_delivery": "2026-12-11",
+      "notes": "Purchased parts (bearings, seal, screws, retaining ring) per parts list"
+    }
+  ]
+}

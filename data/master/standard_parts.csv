@@ -1,0 +1,21 @@
+part_number,description,standard,match_tokens,unit_price_eur,supplier,lead_time_days
+6004-2RS,Deep groove ball bearing 20x42x12 sealed,DIN 625,"[""6004"",""2RS""]",2.10,SKF,5
+6204-2RS,Deep groove ball bearing 20x47x14 sealed,DIN 625,"[""6204"",""2RS""]",2.80,SKF,5
+6205-2RS,Deep groove ball bearing 25x52x15 sealed,DIN 625,"[""6205"",""2RS""]",3.20,SKF,5
+6206-2RS,Deep groove ball bearing 30x62x16 sealed,DIN 625,"[""6206"",""2RS""]",4.10,SKF,5
+6207-2RS,Deep groove ball bearing 35x72x17 sealed,DIN 625,"[""6207"",""2RS""]",5.40,SKF,5
+SEAL-20x35x7,Radial shaft seal 20x35x7 NBR,DIN 3760,"[""20X35X7""]",0.95,Freudenberg,7
+SEAL-25x40x7,Radial shaft seal 25x40x7 NBR,DIN 3760,"[""25X40X7""]",1.05,Freudenberg,7
+SEAL-35x52x7,Radial shaft seal 35x52x7 NBR,DIN 3760,"[""35X52X7""]",1.30,Freudenberg,7
+ISO4762-M4x12,Socket head cap screw M4x12 8.8,ISO 4762,"[""4762"",""M4X12""]",0.06,Würth,2
+ISO4762-M5x12,Socket head cap screw M5x12 8.8,ISO 4762,"[""4762"",""M5X12""]",0.07,Würth,2
+ISO4762-M5x16,Socket head cap screw M5x16 8.8,ISO 4762,"[""4762"",""M5X16""]",0.08,Würth,2
+ISO4762-M6x16,Socket head cap screw M6x16 8.8,ISO 4762,"[""4762"",""M6X16""]",0.09,Würth,2
+ISO4762-M6x20,Socket head cap screw M6x20 8.8,ISO 4762,"[""4762"",""M6X20""]",0.10,Würth,2
+ISO4762-M8x25,Socket head cap screw M8x25 8.8,ISO 4762,"[""4762"",""M8X25""]",0.15,Würth,2
+DIN6885-A6x6x20,Parallel key A 6x6x20,DIN 6885,"[""6885"",""6X6X20""]",0.25,Würth,3
+DIN6885-A10x8x40,Parallel key A 10x8x40,DIN 6885,"[""6885"",""10X8X40""]",0.45,Würth,3
+DIN471-20,Retaining ring shaft 20,DIN 471,"[""471"",""20""]",0.05,Würth,2
+DIN471-35,Retaining ring shaft 35,DIN 471,"[""471"",""35""]",0.09,Würth,2
+DIN472-47,Retaining ring bore 47,DIN 472,"[""472"",""47""]",0.10,Würth,2
+ORING-40x2,O-ring 40x2 NBR70,ISO 3601,"[""O-RING"",""40X2""]",0.12,Freudenberg,5

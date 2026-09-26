@@ -1,0 +1,212 @@
+{
+  "drawing_file": "FL-2208.pdf",
+  "title_block": {
+    "part_number": "FL-2208",
+    "revision": "A",
+    "title": "Motor Flange",
+    "material": "EN AW-6082 T6",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mK",
+    "default_ra_um": 3.2,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "R. Ashdown",
+    "date": "2026-07-29",
+    "evidence": {
+      "part_number": {
+        "text": "FL-2208",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "A",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Motor Flange",
+        "location": "title block"
+      },
+      "material": {
+        "text": "EN AW-6082 T6",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mK",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "R. Ashdown",
+        "location": "title block"
+      },
+      "date": {
+        "text": "2026-07-29",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "rotational",
+    "max_diameter_mm": 120.0,
+    "length_mm": 25.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "outer_diameter",
+      "description": "Flange outer diameter Ø120",
+      "nominal_mm": 120.0,
+      "length_mm": 25.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø120",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "bore",
+      "description": "Centring recess Ø80 H7, depth 4, Ra 1.6",
+      "nominal_mm": 80.0,
+      "length_mm": 4.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H7",
+        "it_grade": null
+      },
+      "ra_um": 1.6,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø80 H7",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "bore",
+      "description": "Through bore Ø52",
+      "nominal_mm": 52.0,
+      "length_mm": 21.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø52",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "thread",
+      "description": "4x tapped hole M6 on PCD 100, thread depth 12",
+      "nominal_mm": 6.0,
+      "length_mm": 12.0,
+      "quantity": 4,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": "M6x1",
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "4× M6 on PCD 100",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "hole",
+      "description": "4x through hole Ø9 on PCD 100",
+      "nominal_mm": 9.0,
+      "length_mm": 25.0,
+      "quantity": 4,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "4× Ø9 THRU on PCD 100",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F6",
+      "type": "face",
+      "description": "Flange thickness 25 ±0.1",
+      "nominal_mm": 25.0,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": {
+        "upper": 0.1,
+        "lower": -0.1,
+        "fit": null,
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "25 ±0.1",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F7",
+      "type": "chamfer",
+      "description": "Chamfer 1x45° on outer edges",
+      "nominal_mm": 1.0,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "1×45°",
+        "location": "section A-A"
+      }
+    }
+  ],
+  "heat_treatment": null,
+  "surface_treatment": "anodized black",
+  "notes": [
+    "Surface treatment: anodized black, layer 15-20 µm.",
+    "Recess Ø80 H7 and mating face: no anodizing damage permitted.",
+    "Break all sharp edges 0.2-0.5."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

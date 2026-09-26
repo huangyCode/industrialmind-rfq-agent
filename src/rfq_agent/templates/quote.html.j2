@@ -1,0 +1,108 @@
+{% set L = {
+  "de": {"title": "Angebot", "quote_no": "Angebotsnummer", "your_rfq": "Ihre Anfrage", "date": "Datum",
+         "valid": "Gültig bis", "customer": "Kunde", "contact": "Ansprechpartner", "incoterm": "Lieferbedingung",
+         "currency": "Währung", "pos": "Pos.", "part": "Teil", "plant": "Werk", "qty": "Menge", "unit": "Einzelpreis",
+         "total": "Gesamt", "lead": "Lieferzeit", "weeks": "Wochen", "pcs": "Stk.", "option": "Option",
+         "minorder": "Mindestauftragswert", "por": "Preis auf Anfrage", "assumptions": "Annahmen und Bedingungen",
+         "approval": "Freigabe", "approved_by": "Freigegeben von", "approved_at": "am", "incomplete": "Preis unvollständig",
+         "cust_pn": "Kunden-Nr."},
+  "en": {"title": "Quotation", "quote_no": "Quotation no.", "your_rfq": "Your RFQ", "date": "Date",
+         "valid": "Valid until", "customer": "Customer", "contact": "Contact", "incoterm": "Delivery terms",
+         "currency": "Currency", "pos": "Item", "part": "Part", "plant": "Plant", "qty": "Quantity", "unit": "Unit price",
+         "total": "Total", "lead": "Lead time", "weeks": "weeks", "pcs": "pcs", "option": "option",
+         "minorder": "minimum order value", "por": "Price on request", "assumptions": "Assumptions and conditions",
+         "approval": "Approval", "approved_by": "Approved by", "approved_at": "on", "incomplete": "price incomplete",
+         "cust_pn": "Customer P/N"}
+}[lang] %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<title>{{ L.title }} {{ q.quote_id }}</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; color: #1d2733; margin: 0 auto; max-width: 185mm; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #1f4e79; padding-bottom: 6px; }
+  header .brand { font-size: 16pt; font-weight: 700; color: #1f4e79; }
+  header .doc { font-size: 14pt; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; }
+  .meta { margin: 12px 0; }
+  .meta td { padding: 2px 8px 2px 0; vertical-align: top; }
+  .meta td.k { color: #5b6b7b; width: 32%; }
+  .letter { white-space: pre-wrap; margin: 14px 0 18px; line-height: 1.45; }
+  h2 { font-size: 11.5pt; color: #1f4e79; margin: 18px 0 6px; }
+  .items th { background: #eef3f8; text-align: left; font-weight: 600; }
+  .items th, .items td { border-bottom: 1px solid #d5dde6; padding: 5px 6px; vertical-align: top; }
+  .num { text-align: right; white-space: nowrap; }
+  .muted { color: #5b6b7b; font-size: 9pt; }
+  .por { color: #b3261e; font-weight: 600; }
+  ol.assumptions { padding-left: 18px; }
+  ol.assumptions li { margin-bottom: 3px; }
+  footer { margin-top: 22px; border-top: 1px solid #d5dde6; padding-top: 6px; font-size: 9pt; color: #5b6b7b; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">{{ company }}</div>
+  <div class="doc">{{ L.title }} {{ q.quote_id }}</div>
+</header>
+
+<table class="meta">
+  <tr><td class="k">{{ L.customer }}</td><td>{{ q.customer_name }}</td>
+      <td class="k">{{ L.quote_no }}</td><td>{{ q.quote_id }}</td></tr>
+  <tr><td class="k">{{ L.contact }}</td><td>{{ q.contact_name or "-" }}</td>
+      <td class="k">{{ L.your_rfq }}</td><td>{{ q.rfq_id }}</td></tr>
+  <tr><td class="k">{{ L.incoterm }}</td><td>{{ q.incoterm or "FCA" }}</td>
+      <td class="k">{{ L.date }}</td><td>{{ q.issued_on | fmt_date(lang) }}</td></tr>
+  <tr><td class="k">{{ L.currency }}</td><td>{{ q.currency }}</td>
+      <td class="k">{{ L.valid }}</td><td>{{ q.valid_until | fmt_date(lang) }}</td></tr>
+</table>
+
+<div class="letter">{{ q.cover_letter }}</div>
+
+<h2>{{ L.title }}</h2>
+<table class="items">
+  <thead>
+    <tr><th>{{ L.pos }}</th><th>{{ L.part }}</th><th>{{ L.plant }}</th><th class="num">{{ L.qty }}</th>
+        <th class="num">{{ L.unit }}</th><th class="num">{{ L.total }}</th><th class="num">{{ L.lead }}</th></tr>
+  </thead>
+  <tbody>
+  {% for ln in q.lines %}
+    {% set n = ln.prices | length %}
+    {% for p in ln.prices %}
+    <tr>
+      {% if loop.first %}
+      <td rowspan="{{ n }}">{{ ln.line_no }}</td>
+      <td rowspan="{{ n }}"><strong>{{ ln.part_number }}</strong><br>{{ ln.description or "" }}
+        {% if ln.customer_part_number and ln.customer_part_number != ln.part_number %}<br><span class="muted">{{ L.cust_pn }} {{ ln.customer_part_number }}</span>{% endif %}
+        {% if ln.unpriced_items %}<br><span class="por">{{ L.incomplete }}</span>{% endif %}</td>
+      <td rowspan="{{ n }}">{{ ln.plant }}</td>
+      {% endif %}
+      <td class="num">{{ p.qty | num(lang) }} {{ L.pcs }}{% if p.option %}<br><span class="muted">({{ L.option }})</span>{% endif %}</td>
+      <td class="num">{{ p.unit_price_eur | money(lang) }}</td>
+      <td class="num">{{ p.total_price_eur | money(lang) }}{% if p.min_order_applied %}<br><span class="muted">({{ L.minorder }})</span>{% endif %}</td>
+      {% if loop.first %}<td class="num" rowspan="{{ n }}">{{ ln.lead_time_weeks }} {{ L.weeks }}</td>{% endif %}
+    </tr>
+    {% else %}
+    <tr><td>{{ ln.line_no }}</td><td><strong>{{ ln.part_number }}</strong><br>{{ ln.description or "" }}</td>
+        <td>{{ ln.plant }}</td><td colspan="4" class="por">{{ L.por }}</td></tr>
+    {% endfor %}
+    {% for u in ln.unpriced_items %}
+    <tr><td></td><td colspan="6"><span class="por">{{ L.por }}:</span> {{ u }}</td></tr>
+    {% endfor %}
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>{{ L.assumptions }}</h2>
+<ol class="assumptions">
+{% for a in q.assumptions %}
+  <li>{{ a }}</li>
+{% endfor %}
+</ol>
+
+<footer>
+  {{ L.approval }}: {{ L.approved_by }} {{ q.approved_by }} {{ L.approved_at }} {{ q.approved_at.strftime("%Y-%m-%d %H:%M") }} · {{ q.quote_id }} · {{ company }}
+</footer>
+</body>
+</html>

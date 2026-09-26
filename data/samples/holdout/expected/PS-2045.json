@@ -1,0 +1,253 @@
+{
+  "drawing_file": "PS-2045.pdf",
+  "title_block": {
+    "part_number": "PS-2045",
+    "revision": "D",
+    "title": "Pinion Shaft",
+    "material": "C45E",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-m",
+    "default_ra_um": 1.6,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "L. Fischbach",
+    "date": "11.09.2026",
+    "evidence": {
+      "part_number": {
+        "text": "PS-2045",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "D",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Pinion Shaft",
+        "location": "title block"
+      },
+      "material": {
+        "text": "C45E",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-m",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 1.6",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "L. Fischbach",
+        "location": "title block"
+      },
+      "date": {
+        "text": "11.09.2026",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "rotational",
+    "max_diameter_mm": 47.5,
+    "length_mm": 125.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "spline",
+      "description": "Involute spline W25 x 1.25 x 18 (DIN 5480), length 28",
+      "nominal_mm": 25.0,
+      "length_mm": 28.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "DIN 5480-W25×1.25×18×8f",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "outer_diameter",
+      "description": "Bearing seat Ø30 k5",
+      "nominal_mm": 30.0,
+      "length_mm": 19.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "k5",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø30 k5",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "outer_diameter",
+      "description": "Shoulder Ø38",
+      "nominal_mm": 38.0,
+      "length_mm": 12.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø38",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "gear_teeth",
+      "description": "Integral spur teeth m 2.5, z 17, pressure angle 20°, pitch diameter 42.5, face width 30",
+      "nominal_mm": 42.5,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": 2.5,
+      "gear_teeth": 17,
+      "face_width_mm": 30.0,
+      "evidence": {
+        "text": "m = 2.5",
+        "location": "tooth data"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "outer_diameter",
+      "description": "Tip diameter Ø47.5 h10",
+      "nominal_mm": 47.5,
+      "length_mm": 30.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "h10",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø47.5 h10",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F6",
+      "type": "outer_diameter",
+      "description": "Bearing seat Ø28 j6",
+      "nominal_mm": 28.0,
+      "length_mm": 22.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "j6",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø28 j6",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F7",
+      "type": "thread",
+      "description": "Thread M20x1.5-6g, length 14",
+      "nominal_mm": 20.0,
+      "length_mm": 14.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": "M20x1.5",
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "M20×1.5-6g",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F8",
+      "type": "hole",
+      "description": "Centre holes DIN 332 form A 3.15/6.7 at both ends",
+      "nominal_mm": 3.15,
+      "length_mm": null,
+      "quantity": 2,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× DIN 332-A3.15/6.7",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F9",
+      "type": "chamfer",
+      "description": "Chamfer 1.5x45° at both ends",
+      "nominal_mm": 1.5,
+      "length_mm": null,
+      "quantity": 2,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× 1.5×45°",
+        "location": "front view"
+      }
+    }
+  ],
+  "heat_treatment": "induction hardened 50-56 HRC",
+  "surface_treatment": null,
+  "notes": [
+    "Teeth and bearing seats induction hardened 50-56 HRC, depth 1.0-1.5 mm.",
+    "Bearing seats Ø30 k5 and Ø28 j6: runout 0.008 to common axis.",
+    "Teeth ground after hardening."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

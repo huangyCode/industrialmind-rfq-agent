@@ -1,0 +1,19 @@
+{% if lang == "de" %}
+{% if contact %}Sehr geehrte/r {{ contact }},{% else %}Sehr geehrte Damen und Herren,{% endif %}
+
+
+vielen Dank für Ihre Anfrage. Bevor wir Ihnen ein verbindliches Angebot erstellen können, benötigen wir Ihre Rückmeldung zu folgenden Punkten:
+
+{{ placeholder }}
+
+Sobald uns Ihre Antworten vorliegen, erhalten Sie unser Angebot umgehend.
+{% else %}
+{% if contact %}Dear {{ contact }},{% else %}Dear Sir or Madam,{% endif %}
+
+
+thank you for your request for quotation. Before we can prepare a binding quotation, we need your feedback on the following points:
+
+{{ placeholder }}
+
+As soon as we have your answers, we will send you our quotation promptly.
+{% endif %}

@@ -1,0 +1,218 @@
+{
+  "drawing_file": "BS-60218.pdf",
+  "title_block": {
+    "part_number": "BS-60218",
+    "revision": "02",
+    "title": "Flanged Guide Bushing",
+    "material": "X5CrNi18-10 (1.4301)",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-fK",
+    "default_ra_um": 3.2,
+    "scale": "2:1",
+    "units": "mm",
+    "drawn_by": "T. Aaltonen",
+    "date": "03.07.2026",
+    "evidence": {
+      "part_number": {
+        "text": "BS-60218",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "02",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Flanged Guide Bushing",
+        "location": "title block"
+      },
+      "material": {
+        "text": "X5CrNi18-10 (1.4301)",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-fK",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "2:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "T. Aaltonen",
+        "location": "title block"
+      },
+      "date": {
+        "text": "03.07.2026",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "rotational",
+    "max_diameter_mm": 56.0,
+    "length_mm": 56.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "outer_diameter",
+      "description": "Collar Ø56, length 10",
+      "nominal_mm": 56.0,
+      "length_mm": 10.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø56",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "outer_diameter",
+      "description": "Press-fit diameter Ø45 r6, Ra 1.6",
+      "nominal_mm": 45.0,
+      "length_mm": 46.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "r6",
+        "it_grade": null
+      },
+      "ra_um": 1.6,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø45 r6",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "bore",
+      "description": "Guide bore Ø30 H7 through, Ra 0.2",
+      "nominal_mm": 30.0,
+      "length_mm": 56.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H7",
+        "it_grade": null
+      },
+      "ra_um": 0.2,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø30 H7",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "groove",
+      "description": "Internal circlip groove Ø31.4 x 1.2 (DIN 472), 6.5 from the press-fit end",
+      "nominal_mm": 31.4,
+      "length_mm": 1.2,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "GROOVE Ø31.4×1.2 DIN 472",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "hole",
+      "description": "Radial lubrication hole Ø5 through the wall, 33 from the collar face",
+      "nominal_mm": 5.0,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø5 THRU",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F6",
+      "type": "chamfer",
+      "description": "Press-in lead chamfer 1.5 x 30° on Ø45",
+      "nominal_mm": 1.5,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "1.5×30°",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F7",
+      "type": "face",
+      "description": "Overall length 56 ±0.05",
+      "nominal_mm": 56.0,
+      "length_mm": null,
+      "quantity": 1,
+      "tolerance": {
+        "upper": 0.05,
+        "lower": -0.05,
+        "fit": null,
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "56 ±0.05",
+        "location": "section A-A"
+      }
+    }
+  ],
+  "heat_treatment": null,
+  "surface_treatment": "passivated",
+  "notes": [
+    "Surface treatment: passivated, free of iron contamination.",
+    "Bore Ø30 H7: cylindricity 0.005, honed.",
+    "Ø45 r6 coaxial to bore within 0.02.",
+    "Deburr the cross hole inside the bore."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

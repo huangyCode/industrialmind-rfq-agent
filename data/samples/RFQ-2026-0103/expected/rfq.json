@@ -1,0 +1,27 @@
+{
+  "rfq_id": "RFQ-2026-0103",
+  "customer_name": "Tervalo Automation B.V.",
+  "contact_name": "Sanne Verbeek",
+  "contact_email": "s.verbeek@tervalo-automation.example",
+  "language": "en",
+  "received_at": "2026-09-17",
+  "incoterm": "DAP",
+  "currency": "EUR",
+  "special_requirements": [
+    "First article inspection report",
+    "Parts delivered deburred and cleaned"
+  ],
+  "items": [
+    {
+      "line_no": 1,
+      "customer_part_number": "BR-0930",
+      "description": "Mounting Bracket",
+      "drawing_ref": "BR-0930.pdf",
+      "quantities": [
+        300
+      ],
+      "requested_delivery": "2026-11-20",
+      "notes": null
+    }
+  ]
+}

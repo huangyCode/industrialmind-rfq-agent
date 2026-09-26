@@ -1,0 +1,21 @@
+{% for ln in q.lines %}
+{% if lang == "de" %}
+- Pos. {{ ln.line_no }} {{ ln.part_number }}{% if ln.description %} ({{ ln.description }}){% endif %}, Werk {{ ln.plant }}, Lieferzeit {{ ln.lead_time_weeks }} Wochen:
+{% for p in ln.prices %}
+    {{ p.qty | num(lang) }} Stk.: {{ p.unit_price_eur | money(lang) }} / Stk.{% if p.option %} (Option){% endif %}{% if p.min_order_applied %} (Mindestauftragswert {{ p.total_price_eur | money(lang) }}){% endif %}
+
+{% endfor %}
+{% for u in ln.unpriced_items %}
+    Preis auf Anfrage: {{ u }}
+{% endfor %}
+{% else %}
+- Item {{ ln.line_no }} {{ ln.part_number }}{% if ln.description %} ({{ ln.description }}){% endif %}, plant {{ ln.plant }}, lead time {{ ln.lead_time_weeks }} weeks:
+{% for p in ln.prices %}
+    {{ p.qty | num(lang) }} pcs: {{ p.unit_price_eur | money(lang) }} / pc{% if p.option %} (option){% endif %}{% if p.min_order_applied %} (minimum order value {{ p.total_price_eur | money(lang) }}){% endif %}
+
+{% endfor %}
+{% for u in ln.unpriced_items %}
+    Price on request: {{ u }}
+{% endfor %}
+{% endif %}
+{% endfor %}

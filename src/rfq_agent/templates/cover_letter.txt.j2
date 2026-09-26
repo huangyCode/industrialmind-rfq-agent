@@ -1,0 +1,23 @@
+{% if lang == "de" %}
+{% if q.contact_name %}Sehr geehrte/r {{ q.contact_name }},{% else %}Sehr geehrte Damen und Herren,{% endif %}
+
+
+vielen Dank für Ihre Anfrage {{ q.rfq_id }}. Gerne unterbreiten wir Ihnen unser Angebot {{ q.quote_id }}:
+
+{{ placeholder }}
+
+Die Preise basieren auf den im Angebot aufgeführten Annahmen, insbesondere Werkstoff und Toleranzen gemäß Ihrer Zeichnung.{% if q.lines | selectattr("unpriced_items") | list %} Positionen mit „Preis auf Anfrage“ reichen wir nach, sobald uns die fehlenden Unterlagen vorliegen.{% endif %}
+
+Für Rückfragen stehen wir Ihnen gerne zur Verfügung und freuen uns auf Ihren Auftrag.
+{% else %}
+{% if q.contact_name %}Dear {{ q.contact_name }},{% else %}Dear Sir or Madam,{% endif %}
+
+
+thank you for your request for quotation {{ q.rfq_id }}. We are pleased to submit our quotation {{ q.quote_id }}:
+
+{{ placeholder }}
+
+Prices are based on the assumptions listed in the quotation, in particular material and tolerances as per your drawing.{% if q.lines | selectattr("unpriced_items") | list %} Items marked "price on request" will follow as soon as we receive the missing documents.{% endif %}
+
+Please do not hesitate to contact us with any questions; we look forward to your order.
+{% endif %}

@@ -1,0 +1,80 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_title_block",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v2+base.v3",
+    "user_text_chars": 51,
+    "images": [
+      "BS-60218_p1_title_block.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 19644,
+    "key": "a9762d3ca343273ab4fe40951a894c74528e38478f93e16056cc29e91e978a3e"
+  },
+  "raw_response": "{\n  \"title_block\": {\n    \"part_number\": \"BS-60218\",\n    \"revision\": \"02\",\n    \"title\": \"Flanged Guide Bushing\",\n    \"material\": \"X5CrNi18-10 (1.4301)\",\n    \"material_code\": null,\n    \"general_tolerance\": \"ISO 2768-fK\",\n    \"default_ra_um\": 3.2,\n    \"scale\": \"2:1\",\n    \"units\": \"mm\",\n    \"drawn_by\": \"T. Aaltonen\",\n    \"date\": \"03.07.2026\",\n    \"evidence\": {\n      \"part_number\": {\n        \"text\": \"BS-60218\",\n        \"location\": \"Drawing No.\"\n      },\n      \"revision\": {\n        \"text\": \"02\",\n        \"location\": \"Issue\"\n      },\n      \"title\": {\n        \"text\": \"Flanged Guide Bushing\",\n        \"location\": \"Description\"\n      },\n      \"material\": {\n        \"text\": \"X5CrNi18-10 (1.4301)\",\n        \"location\": \"Material\"\n      },\n      \"general_tolerance\": {\n        \"text\": \"ISO 2768-fK\",\n        \"location\": \"Tolerances unless stated\"\n      },\n      \"default_ra_um\": {\n        \"text\": \"Ra 3.2\",\n        \"location\": \"Finish\"\n      },\n      \"scale\": {\n        \"text\": \"2:1\",\n        \"location\": \"Scale\"\n      },\n      \"units\": {\n        \"text\": \"mm\",\n        \"location\": \"Unit\"\n      },\n      \"drawn_by\": {\n        \"text\": \"T. Aaltonen\",\n        \"location\": \"Drawn\"\n      },\n      \"date\": {\n        \"text\": \"03.07.2026\",\n        \"location\": \"Date\"\n      }\n    }\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "title_block": {
+      "part_number": "BS-60218",
+      "revision": "02",
+      "title": "Flanged Guide Bushing",
+      "material": "X5CrNi18-10 (1.4301)",
+      "material_code": null,
+      "general_tolerance": "ISO 2768-fK",
+      "default_ra_um": 3.2,
+      "scale": "2:1",
+      "units": "mm",
+      "drawn_by": "T. Aaltonen",
+      "date": "03.07.2026",
+      "evidence": {
+        "part_number": {
+          "text": "BS-60218",
+          "location": "Drawing No."
+        },
+        "revision": {
+          "text": "02",
+          "location": "Issue"
+        },
+        "title": {
+          "text": "Flanged Guide Bushing",
+          "location": "Description"
+        },
+        "material": {
+          "text": "X5CrNi18-10 (1.4301)",
+          "location": "Material"
+        },
+        "general_tolerance": {
+          "text": "ISO 2768-fK",
+          "location": "Tolerances unless stated"
+        },
+        "default_ra_um": {
+          "text": "Ra 3.2",
+          "location": "Finish"
+        },
+        "scale": {
+          "text": "2:1",
+          "location": "Scale"
+        },
+        "units": {
+          "text": "mm",
+          "location": "Unit"
+        },
+        "drawn_by": {
+          "text": "T. Aaltonen",
+          "location": "Drawn"
+        },
+        "date": {
+          "text": "03.07.2026",
+          "location": "Date"
+        }
+      }
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 949,
+    "output_tokens": 502
+  },
+  "recorded_at": "2026-09-26T17:22:47"
+}

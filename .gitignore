@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/runtime/
+data/rfq.db
+.pytest_cache/
+.ruff_cache/
+.DS_Store

@@ -1,0 +1,80 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_title_block",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v2+base.v3",
+    "user_text_chars": 50,
+    "images": [
+      "PS-2045_p1_title_block.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 17000,
+    "key": "d2380cab9c047e4bce31ea454074aa4cccd693a3ba5145b21532c78a71db6a16"
+  },
+  "raw_response": "{\n  \"title_block\": {\n    \"part_number\": \"PS-2045\",\n    \"revision\": \"D\",\n    \"title\": \"Pinion Shaft\",\n    \"material\": \"C45E\",\n    \"material_code\": null,\n    \"general_tolerance\": \"ISO 2768-m\",\n    \"default_ra_um\": 1.6,\n    \"scale\": \"1:1\",\n    \"units\": \"mm\",\n    \"drawn_by\": \"L. Fischbach\",\n    \"date\": \"11.09.2026\",\n    \"evidence\": {\n      \"part_number\": {\n        \"text\": \"PS-2045\",\n        \"location\": \"Drawing No.\"\n      },\n      \"revision\": {\n        \"text\": \"D\",\n        \"location\": \"Issue\"\n      },\n      \"title\": {\n        \"text\": \"Pinion Shaft\",\n        \"location\": \"Description\"\n      },\n      \"material\": {\n        \"text\": \"C45E\",\n        \"location\": \"Material\"\n      },\n      \"general_tolerance\": {\n        \"text\": \"ISO 2768-m\",\n        \"location\": \"Tolerances unless stated\"\n      },\n      \"default_ra_um\": {\n        \"text\": \"Ra 1.6\",\n        \"location\": \"Finish\"\n      },\n      \"scale\": {\n        \"text\": \"1:1\",\n        \"location\": \"Scale\"\n      },\n      \"units\": {\n        \"text\": \"mm\",\n        \"location\": \"Unit\"\n      },\n      \"drawn_by\": {\n        \"text\": \"L. Fischbach\",\n        \"location\": \"Drawn\"\n      },\n      \"date\": {\n        \"text\": \"11.09.2026\",\n        \"location\": \"Date\"\n      }\n    }\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "title_block": {
+      "part_number": "PS-2045",
+      "revision": "D",
+      "title": "Pinion Shaft",
+      "material": "C45E",
+      "material_code": null,
+      "general_tolerance": "ISO 2768-m",
+      "default_ra_um": 1.6,
+      "scale": "1:1",
+      "units": "mm",
+      "drawn_by": "L. Fischbach",
+      "date": "11.09.2026",
+      "evidence": {
+        "part_number": {
+          "text": "PS-2045",
+          "location": "Drawing No."
+        },
+        "revision": {
+          "text": "D",
+          "location": "Issue"
+        },
+        "title": {
+          "text": "Pinion Shaft",
+          "location": "Description"
+        },
+        "material": {
+          "text": "C45E",
+          "location": "Material"
+        },
+        "general_tolerance": {
+          "text": "ISO 2768-m",
+          "location": "Tolerances unless stated"
+        },
+        "default_ra_um": {
+          "text": "Ra 1.6",
+          "location": "Finish"
+        },
+        "scale": {
+          "text": "1:1",
+          "location": "Scale"
+        },
+        "units": {
+          "text": "mm",
+          "location": "Unit"
+        },
+        "drawn_by": {
+          "text": "L. Fischbach",
+          "location": "Drawn"
+        },
+        "date": {
+          "text": "11.09.2026",
+          "location": "Date"
+        }
+      }
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 948,
+    "output_tokens": 466
+  },
+  "recorded_at": "2026-09-26T17:25:06"
+}

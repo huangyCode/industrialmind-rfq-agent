@@ -1,0 +1,153 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0102",
+    "node": "drawing_views",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v4+base.v3",
+    "user_text_chars": 104,
+    "images": [
+      "FL-2208_p1_overview.png",
+      "FL-2208_p1_view_1.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 34012,
+    "key": "82eb292b8ebf85c820e270e509a237172b2bdaf29cfd1f0fd5243c99bc60b866"
+  },
+  "raw_response": "{\n  \"envelope\": {\n    \"shape_class\": \"rotational\",\n    \"max_diameter_mm\": 120,\n    \"length_mm\": 25.1000000000000000,\n    \"width_mm\": null,\n    \"height_mm\": null\n  },\n  \"features\": [\n    {\n      \"id\": \"F1\",\n      \"type\": \"thread\",\n      \"description\": \"4x M6 on PCD 100 thread depth 12\",\n      \"nominal_mm\": 6,\n      \"length_mm\": 12,\n      \"quantity\": 4,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": \"M6\",\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"4x M6 on PCD 100 thread depth 12\",\n        \"location\": \"front view\"\n      }\n    },\n    {\n      \"id\": \"F2\",\n      \"type\": \"hole\",\n      \"description\": \"4x Ø9 THRU on PCD 100\",\n      \"nominal_mm\": 9,\n      \"length_mm\": null,\n      \"quantity\": 4,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"4x Ø9 THRU on PCD 100\",\n        \"location\": \"front view\"\n      }\n    },\n    {\n      \"id\": \"F3\",\n      \"type\": \"bore\",\n      \"description\": \"Ø80 H7\",\n      \"nominal_mm\": 80,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H7\",\n        \"it_grade\": null\n      },\n      \"ra_um\": 1.6,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø80 H7\",\n        \"location\": \"section A-A\"\n      }\n    },\n    {\n      \"id\": \"F4\",\n      \"type\": \"bore\",\n      \"description\": \"Ø52\",\n      \"nominal_mm\": 52,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø52\",\n        \"location\": \"section A-A\"\n      }\n    },\n    {\n      \"id\": \"F5\",\n      \"type\": \"face\",\n      \"description\": \"25 ±0.1\",\n      \"nominal_mm\": 25,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": 0.1,\n        \"lower\": -0.1,\n        \"fit\": null,\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"25 ±0.1\",\n        \"location\": \"section A-A\"\n      }\n    },\n    {\n      \"id\": \"F6\",\n      \"type\": \"chamfer\",\n      \"description\": \"1x45°\",\n      \"nominal_mm\": null,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"1x45°\",\n        \"location\": \"section A-A\"\n      }\n    }\n  ],\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "envelope": {
+      "shape_class": "rotational",
+      "max_diameter_mm": 120.0,
+      "length_mm": 25.1,
+      "width_mm": null,
+      "height_mm": null
+    },
+    "features": [
+      {
+        "id": "F1",
+        "type": "thread",
+        "description": "4x M6 on PCD 100 thread depth 12",
+        "nominal_mm": 6.0,
+        "length_mm": 12.0,
+        "quantity": 4,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": "M6",
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "4x M6 on PCD 100 thread depth 12",
+          "location": "front view"
+        }
+      },
+      {
+        "id": "F2",
+        "type": "hole",
+        "description": "4x Ø9 THRU on PCD 100",
+        "nominal_mm": 9.0,
+        "length_mm": null,
+        "quantity": 4,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "4x Ø9 THRU on PCD 100",
+          "location": "front view"
+        }
+      },
+      {
+        "id": "F3",
+        "type": "bore",
+        "description": "Ø80 H7",
+        "nominal_mm": 80.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H7",
+          "it_grade": null
+        },
+        "ra_um": 1.6,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø80 H7",
+          "location": "section A-A"
+        }
+      },
+      {
+        "id": "F4",
+        "type": "bore",
+        "description": "Ø52",
+        "nominal_mm": 52.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø52",
+          "location": "section A-A"
+        }
+      },
+      {
+        "id": "F5",
+        "type": "face",
+        "description": "25 ±0.1",
+        "nominal_mm": 25.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": 0.1,
+          "lower": -0.1,
+          "fit": null,
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "25 ±0.1",
+          "location": "section A-A"
+        }
+      },
+      {
+        "id": "F6",
+        "type": "chamfer",
+        "description": "1x45°",
+        "nominal_mm": null,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "1x45°",
+          "location": "section A-A"
+        }
+      }
+    ],
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 2352,
+    "output_tokens": 1113
+  },
+  "recorded_at": "2026-09-26T17:19:56"
+}

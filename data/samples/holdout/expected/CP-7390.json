@@ -1,0 +1,200 @@
+{
+  "drawing_file": "CP-7390.pdf",
+  "title_block": {
+    "part_number": "CP-7390",
+    "revision": "1",
+    "title": "Adapter Plate",
+    "material": "EN-GJS-500-7",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mH",
+    "default_ra_um": 3.2,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "B. Kowalczyk",
+    "date": "21.08.2026",
+    "evidence": {
+      "part_number": {
+        "text": "CP-7390",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "1",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Adapter Plate",
+        "location": "title block"
+      },
+      "material": {
+        "text": "EN-GJS-500-7",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mH",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "B. Kowalczyk",
+        "location": "title block"
+      },
+      "date": {
+        "text": "21.08.2026",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "prismatic",
+    "max_diameter_mm": null,
+    "length_mm": 150.0,
+    "width_mm": 100.0,
+    "height_mm": 20.0
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "hole",
+      "description": "4x through hole Ø13.5 for M12 cap screws",
+      "nominal_mm": 13.5,
+      "length_mm": 20.0,
+      "quantity": 4,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "4× Ø13.5 THRU",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "hole",
+      "description": "4x counterbore Ø20, depth 13, on the through holes",
+      "nominal_mm": 20.0,
+      "length_mm": 13.0,
+      "quantity": 4,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "C'BORE Ø20 depth 13",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "thread",
+      "description": "6x tapped hole M6 on PCD 72, thread depth 9",
+      "nominal_mm": 6.0,
+      "length_mm": 9.0,
+      "quantity": 6,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": "M6",
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "6× M6-6H depth 9 on PCD 72",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "bore",
+      "description": "Centre register bore Ø56 H8 through (bored seat)",
+      "nominal_mm": 56.0,
+      "length_mm": 20.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H8",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø56 H8",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "hole",
+      "description": "2x dowel hole Ø10 H7 through",
+      "nominal_mm": 10.0,
+      "length_mm": 20.0,
+      "quantity": 2,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H7",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× Ø10 H7 THRU",
+        "location": "top view"
+      }
+    },
+    {
+      "id": "F6",
+      "type": "slot",
+      "description": "Through slot 40 x 12, width H9",
+      "nominal_mm": 12.0,
+      "length_mm": 40.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "H9",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "SLOT 40×12 H9 THRU",
+        "location": "top view"
+      }
+    }
+  ],
+  "heat_treatment": null,
+  "surface_treatment": "painted RAL 7016",
+  "notes": [
+    "Surface treatment: primed and painted RAL 7016, machined faces and holes masked.",
+    "Flatness of both faces 0.03.",
+    "Casting free of porosity on machined faces.",
+    "Remove all burrs."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}

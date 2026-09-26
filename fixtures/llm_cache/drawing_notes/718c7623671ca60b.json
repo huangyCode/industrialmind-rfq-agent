@@ -1,0 +1,35 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0101",
+    "node": "drawing_notes",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3+base.v3",
+    "user_text_chars": 68,
+    "images": [
+      "SH-4711_p1_right_column.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 4260,
+    "key": "718c7623671ca60bdb5621895b62c9862ef8eb11b5a39a6c677c538963e64db5"
+  },
+  "raw_response": "{\n  \"notes\": [\n    \"Heat treatment: QT 28-32 HRC.\",\n    \"Bearing seats Ø35 k6: runout 0.01 to common axis.\",\n    \"Break all sharp edges 0.2-0.5.\",\n    \"Centre holes DIN 332-D permitted.\"\n  ],\n  \"heat_treatment\": \"QT 28-32 HRC\",\n  \"surface_treatment\": null,\n  \"parts_list\": [],\n  \"gear_data\": null,\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "notes": [
+      "Heat treatment: QT 28-32 HRC.",
+      "Bearing seats Ø35 k6: runout 0.01 to common axis.",
+      "Break all sharp edges 0.2-0.5.",
+      "Centre holes DIN 332-D permitted."
+    ],
+    "heat_treatment": "QT 28-32 HRC",
+    "surface_treatment": null,
+    "parts_list": [],
+    "gear_data": null,
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 1061,
+    "output_tokens": 133
+  },
+  "recorded_at": "2026-09-26T17:18:32"
+}

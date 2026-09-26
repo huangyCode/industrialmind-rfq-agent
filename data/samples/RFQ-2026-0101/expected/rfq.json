@@ -1,0 +1,28 @@
+{
+  "rfq_id": "RFQ-2026-0101",
+  "customer_name": "Hallvig Fördertechnik GmbH",
+  "contact_name": "Jonas Brückner",
+  "contact_email": "j.brueckner@hallvig-foerdertechnik.example",
+  "language": "de",
+  "received_at": "2026-09-15",
+  "incoterm": "DAP",
+  "currency": "EUR",
+  "special_requirements": [
+    "EN 10204 3.1 certificate",
+    "First article inspection report"
+  ],
+  "items": [
+    {
+      "line_no": 1,
+      "customer_part_number": "SH-4711",
+      "description": "Abtriebswelle",
+      "drawing_ref": "SH-4711.pdf",
+      "quantities": [
+        200,
+        500
+      ],
+      "requested_delivery": "2026-11-27",
+      "notes": "Werkstoff und Wärmebehandlung gemäß Zeichnung"
+    }
+  ]
+}

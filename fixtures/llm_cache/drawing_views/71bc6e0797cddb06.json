@@ -1,0 +1,125 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_views",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v4+base.v3",
+    "user_text_chars": 104,
+    "images": [
+      "GR-3340_p1_overview.png",
+      "GR-3340_p1_view_1.png",
+      "GR-3340_p1_view_2.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 31407,
+    "key": "71bc6e0797cddb06c3c11233899ed320c1bacc754fba1ce489390ed242e9b9b7"
+  },
+  "raw_response": "{\n  \"envelope\": {\n    \"shape_class\": \"rotational\",\n    \"max_diameter_mm\": 84.0,\n    \"length_mm\": 20.0000000000000000,\n    \"width_mm\": null,\n    \"height_mm\": null\n  },\n  \"features\": [\n    {\n      \"id\": \"F1\",\n      \"type\": \"bore\",\n      \"description\": \"inner bore of the gear hub\",\n      \"nominal_mm\": 8.0,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"J59\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"8 J59\",\n        \"location\": \"front view\"\n      }\n    },\n    {\n      \"id\": \"F2\",\n      \"type\": \"bore\",\n      \"description\": \"central bore of the gear\",\n      \"nominal_mm\": 25.0,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"H7\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø25 H7\",\n        \"location\": \"front view\"\n      }\n    },\n    {\n      \"id\": \"F3\",\n      \"type\": \"outer_diameter\",\n      \"description\": \"outer diameter of the gear\",\n      \"nominal_mm\": 84.0,\n      \"length_mm\": null,\n      \"quantity\": 1,\n      \"tolerance\": {\n        \"upper\": null,\n        \"lower\": null,\n        \"fit\": \"h11\",\n        \"it_grade\": null\n      },\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"Ø84 h11\",\n        \"location\": \"section A-A\"\n      }\n    },\n    {\n      \"id\": \"F4\",\n      \"type\": \"chamfer\",\n      \"description\": \"edge chamfers\",\n      \"nominal_mm\": 1.0,\n      \"length_mm\": null,\n      \"quantity\": 2,\n      \"tolerance\": null,\n      \"ra_um\": null,\n      \"thread_spec\": null,\n      \"gear_module\": null,\n      \"gear_teeth\": null,\n      \"face_width_mm\": null,\n      \"evidence\": {\n        \"text\": \"2x 1x45°\",\n        \"location\": \"section A-A\"\n      }\n    }\n  ],\n  \"extraction_warnings\": [\n    \"The dimension 28.3 is a positional/offset dimension and not a feature dimension, so it is not included in the features list.\"\n  ]\n}",
+  "parsed": {
+    "envelope": {
+      "shape_class": "rotational",
+      "max_diameter_mm": 84.0,
+      "length_mm": 20.0,
+      "width_mm": null,
+      "height_mm": null
+    },
+    "features": [
+      {
+        "id": "F1",
+        "type": "bore",
+        "description": "inner bore of the gear hub",
+        "nominal_mm": 8.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "J59",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "8 J59",
+          "location": "front view"
+        }
+      },
+      {
+        "id": "F2",
+        "type": "bore",
+        "description": "central bore of the gear",
+        "nominal_mm": 25.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "H7",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø25 H7",
+          "location": "front view"
+        }
+      },
+      {
+        "id": "F3",
+        "type": "outer_diameter",
+        "description": "outer diameter of the gear",
+        "nominal_mm": 84.0,
+        "length_mm": null,
+        "quantity": 1,
+        "tolerance": {
+          "upper": null,
+          "lower": null,
+          "fit": "h11",
+          "it_grade": null
+        },
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "Ø84 h11",
+          "location": "section A-A"
+        }
+      },
+      {
+        "id": "F4",
+        "type": "chamfer",
+        "description": "edge chamfers",
+        "nominal_mm": 1.0,
+        "length_mm": null,
+        "quantity": 2,
+        "tolerance": null,
+        "ra_um": null,
+        "thread_spec": null,
+        "gear_module": null,
+        "gear_teeth": null,
+        "face_width_mm": null,
+        "evidence": {
+          "text": "2x 1x45°",
+          "location": "section A-A"
+        }
+      }
+    ],
+    "extraction_warnings": [
+      "The dimension 28.3 is a positional/offset dimension and not a feature dimension, so it is not included in the features list."
+    ]
+  },
+  "usage": {
+    "input_tokens": 2607,
+    "output_tokens": 849
+  },
+  "recorded_at": "2026-09-26T17:22:26"
+}

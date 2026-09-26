@@ -1,0 +1,35 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_notes",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3+base.v3",
+    "user_text_chars": 68,
+    "images": [
+      "CP-7390_p1_right_column.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 5949,
+    "key": "39f722d3ef20c759ddb0112a1d0576f9f3f70558e3d56748fd1bcec4ac6ba771"
+  },
+  "raw_response": "{\n  \"notes\": [\n    \"Surface treatment: primed and painted RAL 7016, machined faces and holes masked.\",\n    \"Flatness of both faces 0.03.\",\n    \"Casting free of porosity on machined faces.\",\n    \"Remove all burrs.\"\n  ],\n  \"heat_treatment\": null,\n  \"surface_treatment\": \"primed and painted RAL 7016\",\n  \"parts_list\": [],\n  \"gear_data\": null,\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "notes": [
+      "Surface treatment: primed and painted RAL 7016, machined faces and holes masked.",
+      "Flatness of both faces 0.03.",
+      "Casting free of porosity on machined faces.",
+      "Remove all burrs."
+    ],
+    "heat_treatment": null,
+    "surface_treatment": "primed and painted RAL 7016",
+    "parts_list": [],
+    "gear_data": null,
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 1090,
+    "output_tokens": 122
+  },
+  "recorded_at": "2026-09-26T17:24:05"
+}

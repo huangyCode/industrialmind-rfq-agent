@@ -1,0 +1,47 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0102",
+    "node": "intake",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3",
+    "user_text_chars": 825,
+    "images": [],
+    "attempts": 1,
+    "latency_ms": 9896,
+    "key": "375d5b6bfdcfe415f1dda877f789a04284e6834edfcd7888acc6e29e2b9c333d"
+  },
+  "raw_response": "{\n  \"rfq_id\": \"RFQ-2026-0102\",\n  \"customer_name\": \"Norvane Motion Systems Ltd\",\n  \"contact_name\": \"Emily Hartwell\",\n  \"contact_email\": \"e.hartwell@norvane-motion.example\",\n  \"language\": \"en\",\n  \"received_at\": \"2026-09-16\",\n  \"incoterm\": \"FCA\",\n  \"currency\": \"EUR\",\n  \"special_requirements\": [\n    \"RoHS compliant\",\n    \"Parts packed in VCI bags, max. 50 pcs per box\"\n  ],\n  \"items\": [\n    {\n      \"line_no\": 1,\n      \"customer_part_number\": \"FL-2208\",\n      \"description\": \"Motor Flange\",\n      \"drawing_ref\": \"FL-2208.pdf\",\n      \"quantities\": [\n        1000\n      ],\n      \"requested_delivery\": \"2026-12-04\",\n      \"notes\": null\n    }\n  ]\n}",
+  "parsed": {
+    "rfq_id": "RFQ-2026-0102",
+    "customer_name": "Norvane Motion Systems Ltd",
+    "contact_name": "Emily Hartwell",
+    "contact_email": "e.hartwell@norvane-motion.example",
+    "language": "en",
+    "received_at": "2026-09-16",
+    "incoterm": "FCA",
+    "currency": "EUR",
+    "special_requirements": [
+      "RoHS compliant",
+      "Parts packed in VCI bags, max. 50 pcs per box"
+    ],
+    "items": [
+      {
+        "line_no": 1,
+        "customer_part_number": "FL-2208",
+        "description": "Motor Flange",
+        "drawing_ref": "FL-2208.pdf",
+        "quantities": [
+          1000
+        ],
+        "requested_delivery": "2026-12-04",
+        "notes": null
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 1157,
+    "output_tokens": 266
+  },
+  "recorded_at": "2026-09-26T17:26:31"
+}

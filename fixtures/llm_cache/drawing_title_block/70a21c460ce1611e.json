@@ -1,0 +1,88 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_title_block",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v2+base.v3",
+    "user_text_chars": 50,
+    "images": [
+      "GR-3340_p1_title_block.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 15445,
+    "key": "70a21c460ce1611e9a2055ad1e6cd95280256876d36d50a0f23c4b5b2b576e63"
+  },
+  "raw_response": "{\n  \"title_block\": {\n    \"part_number\": \"GR-3340\",\n    \"revision\": \"A\",\n    \"title\": \"Spur Gear\",\n    \"material\": \"16MnCr5\",\n    \"material_code\": null,\n    \"general_tolerance\": \"ISO 2768-mK\",\n    \"default_ra_um\": 3.2,\n    \"scale\": \"1:1\",\n    \"units\": \"mm\",\n    \"drawn_by\": \"P. Wendholt\",\n    \"date\": \"2026-06-17\",\n    \"evidence\": {\n      \"part_number\": {\n        \"text\": \"GR-3340\",\n        \"location\": \"Part number\"\n      },\n      \"revision\": {\n        \"text\": \"A\",\n        \"location\": \"Rev.\"\n      },\n      \"title\": {\n        \"text\": \"Spur Gear\",\n        \"location\": \"Title\"\n      },\n      \"material\": {\n        \"text\": \"16MnCr5\",\n        \"location\": \"Material\"\n      },\n      \"general_tolerance\": {\n        \"text\": \"ISO 2768-mK\",\n        \"location\": \"General tolerance\"\n      },\n      \"surface\": {\n        \"text\": \"Ra 3.2\",\n        \"location\": \"Surface\"\n      },\n      \"scale\": {\n        \"text\": \"1:1\",\n        \"location\": \"Scale\"\n      },\n      \"units\": {\n        \"text\": \"mm\",\n        \"location\": \"Units\"\n      },\n      \"sheet\": {\n        \"text\": \"1 / 1\",\n        \"location\": \"Sheet\"\n      },\n      \"drawn_by\": {\n        \"text\": \"P. Wendholt\",\n        \"location\": \"Drawn\"\n      },\n      \"date\": {\n        \"text\": \"2026-06-17\",\n        \"location\": \"Date\"\n      },\n      \"format\": {\n        \"text\": \"A3\",\n        \"location\": \"Format\"\n      }\n    }\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "title_block": {
+      "part_number": "GR-3340",
+      "revision": "A",
+      "title": "Spur Gear",
+      "material": "16MnCr5",
+      "material_code": null,
+      "general_tolerance": "ISO 2768-mK",
+      "default_ra_um": 3.2,
+      "scale": "1:1",
+      "units": "mm",
+      "drawn_by": "P. Wendholt",
+      "date": "2026-06-17",
+      "evidence": {
+        "part_number": {
+          "text": "GR-3340",
+          "location": "Part number"
+        },
+        "revision": {
+          "text": "A",
+          "location": "Rev."
+        },
+        "title": {
+          "text": "Spur Gear",
+          "location": "Title"
+        },
+        "material": {
+          "text": "16MnCr5",
+          "location": "Material"
+        },
+        "general_tolerance": {
+          "text": "ISO 2768-mK",
+          "location": "General tolerance"
+        },
+        "surface": {
+          "text": "Ra 3.2",
+          "location": "Surface"
+        },
+        "scale": {
+          "text": "1:1",
+          "location": "Scale"
+        },
+        "units": {
+          "text": "mm",
+          "location": "Units"
+        },
+        "sheet": {
+          "text": "1 / 1",
+          "location": "Sheet"
+        },
+        "drawn_by": {
+          "text": "P. Wendholt",
+          "location": "Drawn"
+        },
+        "date": {
+          "text": "2026-06-17",
+          "location": "Date"
+        },
+        "format": {
+          "text": "A3",
+          "location": "Format"
+        }
+      }
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 948,
+    "output_tokens": 517
+  },
+  "recorded_at": "2026-09-26T17:21:47"
+}

@@ -1,0 +1,42 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_notes",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3+base.v3",
+    "user_text_chars": 68,
+    "images": [
+      "GR-3340_p1_right_column.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 8391,
+    "key": "bc99888d64b5002527717855a4c63f665c2a48e3047f9241ae90db028e70e834"
+  },
+  "raw_response": "{\n  \"notes\": [\n    \"Heat treatment: case hardened 58-62 HRC, CHD 0.6-0.9 mm.\",\n    \"Bore and faces ground after hardening.\",\n    \"Break all sharp edges 0.2-0.5.\"\n  ],\n  \"heat_treatment\": \"case hardened 58-62 HRC, CHD 0.6-0.9 mm\",\n  \"surface_treatment\": null,\n  \"parts_list\": [],\n  \"gear_data\": {\n    \"module\": 2,\n    \"teeth\": 40,\n    \"pitch_diameter_mm\": 80,\n    \"face_width_mm\": 20,\n    \"pressure_angle_deg\": 20,\n    \"accuracy\": \"ISO 1328-1 grade 7\",\n    \"evidence\": \"m = 2\"\n  },\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "notes": [
+      "Heat treatment: case hardened 58-62 HRC, CHD 0.6-0.9 mm.",
+      "Bore and faces ground after hardening.",
+      "Break all sharp edges 0.2-0.5."
+    ],
+    "heat_treatment": "case hardened 58-62 HRC, CHD 0.6-0.9 mm",
+    "surface_treatment": null,
+    "parts_list": [],
+    "gear_data": {
+      "module": 2.0,
+      "teeth": 40,
+      "pitch_diameter_mm": 80.0,
+      "face_width_mm": 20.0,
+      "pressure_angle_deg": 20.0,
+      "accuracy": "ISO 1328-1 grade 7",
+      "evidence": "m = 2"
+    },
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 1093,
+    "output_tokens": 219
+  },
+  "recorded_at": "2026-09-26T17:21:55"
+}

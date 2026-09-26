@@ -1,0 +1,40 @@
+code,plant,name,rate_eur_h
+SAW,DE,Band saw,45
+SAW,PL,Band saw,28
+SAW,CN,Band saw,18
+CNC_TURN,DE,CNC turning,95
+CNC_TURN,PL,CNC turning,58
+CNC_TURN,CN,CNC turning,36
+CNC_MILL_3AX,DE,CNC milling 3-axis,105
+CNC_MILL_3AX,PL,CNC milling 3-axis,62
+CNC_MILL_3AX,CN,CNC milling 3-axis,40
+CNC_MILL_5AX,DE,CNC milling 5-axis,145
+CNC_MILL_5AX,PL,CNC milling 5-axis,85
+DRILL,DE,Drilling / tapping,70
+DRILL,PL,Drilling / tapping,42
+DRILL,CN,Drilling / tapping,26
+GRIND_CYL,DE,Cylindrical grinding,120
+GRIND_CYL,PL,Cylindrical grinding,70
+GRIND_SURF,DE,Surface grinding,110
+GRIND_SURF,PL,Surface grinding,65
+GRIND_SURF,CN,Surface grinding,42
+HOB,DE,Gear hobbing,125
+HOB,CN,Gear hobbing,48
+DEBURR,DE,Deburring,55
+DEBURR,PL,Deburring,30
+DEBURR,CN,Deburring,18
+INSPECT,DE,Manual inspection,85
+INSPECT,PL,Manual inspection,50
+INSPECT,CN,Manual inspection,32
+INSPECT_CMM,DE,CMM inspection,110
+INSPECT_CMM,PL,CMM inspection,68
+INSPECT_CMM,CN,CMM inspection,45
+ASSEMBLY,DE,Assembly,70
+ASSEMBLY,PL,Assembly,40
+ASSEMBLY,CN,Assembly,24
+TEST,DE,Functional test,80
+TEST,PL,Functional test,45
+TEST,CN,Functional test,28
+WASH_PACK,DE,Washing & packing,45
+WASH_PACK,PL,Washing & packing,26
+WASH_PACK,CN,Washing & packing,16

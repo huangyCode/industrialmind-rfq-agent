@@ -1,0 +1,27 @@
+From: Markus Engelhardt <m.engelhardt@veltrum-aktorik.example>
+To: Vertrieb PrecisionMotion <sales@precisionmotion.example>
+Subject: Preisanfrage Baugruppe ASM-5100 (Aktuator), 50 Stück
+Date: Mon, 21 Sep 2026 16:27:40 +0200
+Attachments: ASM-5100.pdf
+
+Guten Tag,
+
+bitte unterbreiten Sie uns ein Angebot für die komplette Montage folgender Baugruppe:
+
+Pos. 1: Aktuator-Unterbaugruppe ASM-5100, Index C (Zeichnung ASM-5100.pdf im Anhang)
+Menge: 50 Stück
+Liefertermin: 11.12.2026
+
+Die Einzelteile HS-5101 und SH-5102 haben Sie bereits für uns gefertigt. Kaufteile
+(Lager, Dichtung, Schrauben, Sicherungsring) bitte gemäß Stückliste beistellen.
+
+Anforderungen:
+- Lieferung als komplett montierte Baugruppe
+- 100 % Funktionsprüfung mit Prüfprotokoll
+
+Lieferbedingung FCA, Angebot bitte in EUR.
+
+Freundliche Grüße
+Markus Engelhardt
+Einkauf
+Veltrum Aktorik GmbH

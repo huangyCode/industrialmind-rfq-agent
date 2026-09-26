@@ -1,0 +1,7 @@
+code,name,standard,material_no,mat_group,density_g_cm3,price_eur_kg,machinability,aliases
+C45,C45,EN 10083-2,1.0503,steel,7.85,1.60,1.00,"[""C45E"",""1.0503"",""CK45"",""C45+N""]"
+42CrMo4,42CrMo4,EN 10083-3,1.7225,steel,7.85,2.40,0.80,"[""1.7225"",""42CrMo4+QT"",""42CRMO4 QT"",""AISI 4140""]"
+16MnCr5,16MnCr5,EN 10084,1.7131,case_hardening_steel,7.85,2.20,0.85,"[""1.7131"",""16MnCr5+N""]"
+AW6082,EN AW-6082 T6,EN 573-3,3.2315,aluminium,2.70,4.80,2.50,"[""AW-6082"",""EN AW-6082"",""EN AW-6082-T6"",""AlSi1MgMn"",""6082-T6"",""3.2315""]"
+GJS500,EN-GJS-500-7,EN 1563,5.3200,cast_iron,7.10,2.00,1.10,"[""GJS-500-7"",""EN-GJS-500-7"",""GGG50"",""5.3200""]"
+X5CrNi18-10,X5CrNi18-10,EN 10088-3,1.4301,stainless,7.90,4.50,0.50,"[""1.4301"",""AISI 304"",""V2A""]"

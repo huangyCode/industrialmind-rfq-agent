@@ -1,0 +1,25 @@
+From: Emily Hartwell <e.hartwell@norvane-motion.example>
+To: Vertrieb PrecisionMotion <sales@precisionmotion.example>
+Subject: RFQ - Motor flange FL-2208, 1,000 pcs
+Date: Wed, 16 Sep 2026 14:05:51 +0100
+Attachments: FL-2208.pdf
+
+Dear Sales Team,
+
+please quote the following item for our servo drive series:
+
+Item 1: Motor Flange, drawing FL-2208 rev. A (attached as FL-2208.pdf)
+Quantity: 1,000 pcs
+Requested delivery: 4 December 2026
+
+Requirements:
+- Black anodizing as per drawing, RoHS compliant
+- Parts packed in VCI bags, max. 50 pcs per box
+
+Delivery terms FCA your works, prices in EUR please.
+We would appreciate your quotation by 30 September.
+
+Kind regards,
+Emily Hartwell
+Senior Buyer
+Norvane Motion Systems Ltd

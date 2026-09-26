@@ -1,0 +1,128 @@
+{
+  "drawing_file": "ASM-5100.pdf",
+  "title_block": {
+    "part_number": "ASM-5100",
+    "revision": "C",
+    "title": "Actuator Sub-Assembly",
+    "material": "see parts list",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mK",
+    "default_ra_um": null,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "M. Hollerbeck",
+    "date": "2026-09-08",
+    "evidence": {
+      "part_number": {
+        "text": "ASM-5100",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "C",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Actuator Sub-Assembly",
+        "location": "title block"
+      },
+      "material": {
+        "text": "see parts list",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mK",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "M. Hollerbeck",
+        "location": "title block"
+      },
+      "date": {
+        "text": "2026-09-08",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "assembly",
+    "max_diameter_mm": 90.0,
+    "length_mm": 123.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [],
+  "heat_treatment": null,
+  "surface_treatment": null,
+  "notes": [
+    "Tightening torque pos. 5: 6 Nm, secure with medium-strength threadlocker.",
+    "Bearings pos. 3 pre-greased; fill seal lip pos. 4 with grease before assembly.",
+    "Shaft must rotate freely by hand after assembly; 100 % functional test."
+  ],
+  "parts_list": [
+    {
+      "item_no": 1,
+      "part_number": "HS-5101",
+      "description": "Gehäuse",
+      "quantity": 1,
+      "material": "EN-GJS-500-7",
+      "standard": null
+    },
+    {
+      "item_no": 2,
+      "part_number": "SH-5102",
+      "description": "Welle",
+      "quantity": 1,
+      "material": "C45",
+      "standard": null
+    },
+    {
+      "item_no": 3,
+      "part_number": "6204-2RS",
+      "description": "Rillenkugellager 20×47×14",
+      "quantity": 2,
+      "material": null,
+      "standard": "DIN 625"
+    },
+    {
+      "item_no": 4,
+      "part_number": null,
+      "description": "Wellendichtring 20×35×7 NBR",
+      "quantity": 1,
+      "material": null,
+      "standard": "DIN 3760"
+    },
+    {
+      "item_no": 5,
+      "part_number": null,
+      "description": "Zylinderschraube M5×16-8.8",
+      "quantity": 4,
+      "material": null,
+      "standard": "ISO 4762"
+    },
+    {
+      "item_no": 6,
+      "part_number": "EC-5103",
+      "description": "Enddeckel",
+      "quantity": 1,
+      "material": "EN AW-6082 T6",
+      "standard": null
+    },
+    {
+      "item_no": 7,
+      "part_number": null,
+      "description": "Sicherungsring 20×1.2",
+      "quantity": 1,
+      "material": null,
+      "standard": "DIN 471"
+    }
+  ],
+  "extraction_warnings": []
+}

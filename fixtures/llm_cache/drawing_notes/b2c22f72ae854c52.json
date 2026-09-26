@@ -1,0 +1,35 @@
+{
+  "request_meta": {
+    "rfq_id": null,
+    "node": "drawing_notes",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v3+base.v3",
+    "user_text_chars": 69,
+    "images": [
+      "BS-60218_p1_right_column.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 6396,
+    "key": "b2c22f72ae854c52b8e253392aeed0cbf87f99320dacb50b9dd647faaa2f6f1c"
+  },
+  "raw_response": "{\n  \"notes\": [\n    \"Surface treatment: passivated, free of iron contamination.\",\n    \"Bore Ø30 H7: cylindricity 0.005, honed.\",\n    \"Ø45 r6 coaxial to bore within 0.02.\",\n    \"Deburr the cross hole inside the bore.\"\n  ],\n  \"heat_treatment\": null,\n  \"surface_treatment\": \"passivated, free of iron contamination\",\n  \"parts_list\": [],\n  \"gear_data\": null,\n  \"extraction_warnings\": []\n}",
+  "parsed": {
+    "notes": [
+      "Surface treatment: passivated, free of iron contamination.",
+      "Bore Ø30 H7: cylindricity 0.005, honed.",
+      "Ø45 r6 coaxial to bore within 0.02.",
+      "Deburr the cross hole inside the bore."
+    ],
+    "heat_treatment": null,
+    "surface_treatment": "passivated, free of iron contamination",
+    "parts_list": [],
+    "gear_data": null,
+    "extraction_warnings": []
+  },
+  "usage": {
+    "input_tokens": 1062,
+    "output_tokens": 130
+  },
+  "recorded_at": "2026-09-26T17:22:54"
+}

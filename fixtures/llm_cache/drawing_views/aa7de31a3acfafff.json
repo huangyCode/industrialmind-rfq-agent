@@ -1,0 +1,37 @@
+{
+  "request_meta": {
+    "rfq_id": "RFQ-2026-0104",
+    "node": "drawing_views",
+    "provider": "ollama",
+    "model": "gemma4:12b",
+    "prompt_version": "v4+base.v3",
+    "user_text_chars": 105,
+    "images": [
+      "ASM-5100_p1_overview.png",
+      "ASM-5100_p1_view_1.png",
+      "ASM-5100_p1_view_2.png"
+    ],
+    "attempts": 1,
+    "latency_ms": 5078,
+    "key": "aa7de31a3acfafffce34927330231a5faf6f682c97d0f58777ace6c73429175c"
+  },
+  "raw_response": "{\n  \"envelope\": {\n    \"shape_class\": \"assembly\",\n    \"max_diameter_mm\": 90.0,\n    \"length_mm\": 123.0,\n    \"width_mm\": null,\n    \"height_mm\": null\n  },\n  \"features\": [],\n  \"extraction_warnings\": [\n    \"This is an assembly drawing; machining features are located in the individual component drawings (parts list items 1-7) and are not listed in the features array.\"\n  ]\n}",
+  "parsed": {
+    "envelope": {
+      "shape_class": "assembly",
+      "max_diameter_mm": 90.0,
+      "length_mm": 123.0,
+      "width_mm": null,
+      "height_mm": null
+    },
+    "features": [],
+    "extraction_warnings": [
+      "This is an assembly drawing; machining features are located in the individual component drawings (parts list items 1-7) and are not listed in the features array."
+    ]
+  },
+  "usage": {
+    "input_tokens": 2627,
+    "output_tokens": 122
+  },
+  "recorded_at": "2026-09-26T17:21:30"
+}

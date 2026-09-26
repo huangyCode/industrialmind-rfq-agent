@@ -1,0 +1,223 @@
+{
+  "drawing_file": "SH-4711.pdf",
+  "title_block": {
+    "part_number": "SH-4711",
+    "revision": "B",
+    "title": "Output Shaft",
+    "material": "42CrMo4+QT",
+    "material_code": null,
+    "general_tolerance": "ISO 2768-mK",
+    "default_ra_um": 3.2,
+    "scale": "1:1",
+    "units": "mm",
+    "drawn_by": "K. Lindqvist",
+    "date": "2026-08-12",
+    "evidence": {
+      "part_number": {
+        "text": "SH-4711",
+        "location": "title block"
+      },
+      "revision": {
+        "text": "B",
+        "location": "title block"
+      },
+      "title": {
+        "text": "Output Shaft",
+        "location": "title block"
+      },
+      "material": {
+        "text": "42CrMo4+QT",
+        "location": "title block"
+      },
+      "general_tolerance": {
+        "text": "ISO 2768-mK",
+        "location": "title block"
+      },
+      "default_ra_um": {
+        "text": "Ra 3.2",
+        "location": "title block"
+      },
+      "scale": {
+        "text": "1:1",
+        "location": "title block"
+      },
+      "units": {
+        "text": "mm",
+        "location": "title block"
+      },
+      "drawn_by": {
+        "text": "K. Lindqvist",
+        "location": "title block"
+      },
+      "date": {
+        "text": "2026-08-12",
+        "location": "title block"
+      }
+    }
+  },
+  "envelope": {
+    "shape_class": "rotational",
+    "max_diameter_mm": 40.0,
+    "length_mm": 220.0,
+    "width_mm": null,
+    "height_mm": null
+  },
+  "features": [
+    {
+      "id": "F1",
+      "type": "outer_diameter",
+      "description": "Drive journal Ø32 h7",
+      "nominal_mm": 32.0,
+      "length_mm": 50.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "h7",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø32 h7",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F2",
+      "type": "keyway",
+      "description": "Parallel keyway 10 P9 on drive journal, length 40, keyway bottom at 27 from opposite side",
+      "nominal_mm": 10.0,
+      "length_mm": 40.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "P9",
+        "it_grade": null
+      },
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "10 P9",
+        "location": "section A-A"
+      }
+    },
+    {
+      "id": "F3",
+      "type": "outer_diameter",
+      "description": "Bearing seat Ø35 k6, Ra 0.8 (drive side)",
+      "nominal_mm": 35.0,
+      "length_mm": 25.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "k6",
+        "it_grade": null
+      },
+      "ra_um": 0.8,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø35 k6",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F4",
+      "type": "outer_diameter",
+      "description": "Shaft body Ø40",
+      "nominal_mm": 40.0,
+      "length_mm": 120.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø40",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F5",
+      "type": "outer_diameter",
+      "description": "Bearing seat Ø35 k6, Ra 0.8 (non-drive side)",
+      "nominal_mm": 35.0,
+      "length_mm": 25.0,
+      "quantity": 1,
+      "tolerance": {
+        "upper": null,
+        "lower": null,
+        "fit": "k6",
+        "it_grade": null
+      },
+      "ra_um": 0.8,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "Ø35 k6",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F6",
+      "type": "thread",
+      "description": "Tapped centre hole M12 in drive-end face, thread depth 24",
+      "nominal_mm": 12.0,
+      "length_mm": 24.0,
+      "quantity": 1,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": "M12x1.75",
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "M12 depth 24",
+        "location": "front view"
+      }
+    },
+    {
+      "id": "F7",
+      "type": "chamfer",
+      "description": "Chamfer 1x45° at both shaft ends",
+      "nominal_mm": 1.0,
+      "length_mm": null,
+      "quantity": 2,
+      "tolerance": null,
+      "ra_um": null,
+      "thread_spec": null,
+      "gear_module": null,
+      "gear_teeth": null,
+      "face_width_mm": null,
+      "evidence": {
+        "text": "2× 1×45°",
+        "location": "front view"
+      }
+    }
+  ],
+  "heat_treatment": "QT 28-32 HRC",
+  "surface_treatment": null,
+  "notes": [
+    "Heat treatment: QT 28-32 HRC.",
+    "Bearing seats Ø35 k6: runout 0.01 to common axis.",
+    "Break all sharp edges 0.2-0.5.",
+    "Centre holes DIN 332-D permitted."
+  ],
+  "parts_list": [],
+  "extraction_warnings": []
+}
